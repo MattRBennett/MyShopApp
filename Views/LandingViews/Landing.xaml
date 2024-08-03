@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyShopApp.Views.Landing"
+             Title="Landing"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    
+    <Grid RowDefinitions="*,*">
+       
+
+        <Grid RowDefinitions="Auto, Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
+            <Frame CornerRadius="0">
+                <Label Text="MyShopApp"/>
+            </Frame>
+            <Grid Grid.Row="1" Padding="5">
+                
+
+                <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="LightGray" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
+                <!--<AbsoluteLayout Margin="5,5,5,5" ZIndex="100" >-->
+
+
+                    <CollectionView x:Name="SearchResultsListView">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame  BackgroundColor="White" BorderColor="White" Margin="0" Padding="5">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label FontSize="16" TextColor="Black" Text="{Binding Name}"/>
+                                </Frame>
+
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                <!--</AbsoluteLayout>-->
+
+            </Grid>
+           
+            <Grid Grid.Row="2">
+                <Border Background="LightGray" Padding="5" Margin="5" Stroke="LightGray" StrokeShape="RoundRectangle 5">
+                    <StackLayout Spacing="15">
+                        <Button Text="Add Item"/>
+                        <Button Text="Delete Item"/>
+                        <Button Text="See All Items" Clicked="Button_Clicked"/>
+                        <Button Text="See All Categories"/>
+                        <Button Text="Back" Clicked="Button_Clicked_1"/>
+                    </StackLayout>
+
+                </Border>
+            </Grid>
+            
+        </Grid>
+        <Grid Grid.Row="1" x:Name="LoadingIndicatorStack">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <ActivityIndicator/>
+                <Label Text="Loading..."/>
+            </StackLayout>
+
+
+        </Grid>
+    </Grid>
+</ContentPage>

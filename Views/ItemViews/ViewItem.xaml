@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyShopApp.Views.ItemViews.ViewItem"
+             Title="ViewItem"
+             BackgroundColor="White">
+    <Grid RowDefinitions="Auto, *, Auto">
+        <Grid Grid.Row="0">
+            <Frame CornerRadius="0">
+                <Label Text="MyShopApp"/>
+            </Frame>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ScrollView>
+
+                <Frame Margin="10" BackgroundColor="LightGray" BorderColor="LightGray" CornerRadius="10">
+                    <StackLayout Spacing="15">
+                        <Label x:Name="ItemName" FontSize="22" FontAttributes="Bold"/>
+                        <Image Source="prev.jpg" Aspect="AspectFit"/>
+                        <Label x:Name="ItemCategory"/>
+                        <Label x:Name="ItemDescription"/>
+                        <Label x:Name="ItemPrice"/>
+                    </StackLayout>
+
+                </Frame>
+            </ScrollView>
+        </Grid>
+        <Button Grid.Row="2" Text="Add" Margin="10 ,5,10,10" CornerRadius="10"/>
+    </Grid>
+</ContentPage>
