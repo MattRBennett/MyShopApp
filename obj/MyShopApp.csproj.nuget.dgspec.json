@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\MyShopApp.csproj": {}
+    "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MyShopApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\MyShopApp.csproj": {
+    "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MyShopApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\MyShopApp.csproj",
+        "projectUniqueName": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MyShopApp.csproj",
         "projectName": "MyShopApp",
-        "projectPath": "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\MyShopApp.csproj",
+        "projectPath": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MyShopApp.csproj",
         "packagesPath": "C:\\Users\\Matthew-LT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\obj\\",
+        "outputPath": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

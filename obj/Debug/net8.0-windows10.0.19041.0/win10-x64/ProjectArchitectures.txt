@@ -1,1 +1,1 @@
-C:\Users\Matthew-LT\source\repos\MyShopApp\MyShopApp.csproj;x64
+C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\MyShopApp.csproj;x64

@@ -25,6 +25,10 @@
                 </Frame>
             </ScrollView>
         </Grid>
-        <Button Grid.Row="2" Text="Add" Margin="10 ,5,10,10" CornerRadius="10"/>
+        <Grid Grid.Row="2" ColumnDefinitions="*,*" Margin="10 ,5,10,10" ColumnSpacing="10">
+            <Button Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+            <Button Grid.Column="1" Text="Add To Cart" CornerRadius="10"/>
+        </Grid>
+        
     </Grid>
 </ContentPage>

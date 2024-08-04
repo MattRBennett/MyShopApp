@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g7ZBqY/8Sgc=",
+  "dgSpecHash": "mH8oe0H2WB8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matthew-LT\\source\\repos\\MyShopApp\\MyShopApp.csproj",
+  "projectFilePath": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MyShopApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matthew-LT\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Matthew-LT\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

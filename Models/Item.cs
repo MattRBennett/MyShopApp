@@ -20,7 +20,7 @@ namespace MyShopApp.Models
 
         public decimal Price { get; set; } = decimal.Zero;
 
-        public ItemCategory ItemsCategory { get; set; } = ItemCategory.Unasssigned;
+        public ItemCategory ItemsCategory { get; set; } = ItemCategory.Unassigned;
 
         public async Task<List<Item>> GetItems()
         {

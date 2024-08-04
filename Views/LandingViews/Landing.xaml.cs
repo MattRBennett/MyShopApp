@@ -6,9 +6,10 @@ namespace MyShopApp.Views;
 public partial class Landing : ContentPage
 {
     List<Item> items = new();
+    List<ItemCategory> categories = new();
     public Landing()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         Content.IsVisible = false;
         LoadingIndicatorStack.IsVisible = true;
         SearchResultsListView.IsVisible = false;
@@ -18,9 +19,17 @@ public partial class Landing : ContentPage
     protected async override void OnAppearing()
     {
         base.OnAppearing();
-        
+
+        ItemSearchBar.Text = "";
         Item item = new();
         items = await item.GetItems();
+        var fetchedcategorues = await App.Service.GetItemCategories();
+
+        categories.AddRange(fetchedcategorues);
+        CategoriesCollectionView.ItemsSource = categories;
+
+        var myitems = await App.Service.GetItemsByCategory(ItemCategory.Unassigned);
+
         LoadingIndicatorStack.IsVisible = false;
         Content.IsVisible = true;
 
@@ -63,9 +72,7 @@ public partial class Landing : ContentPage
                 {
                     SearchResultsListView.IsVisible = false;
                 }
-
-
-                }
+            }
             else
             {
                 SearchResultsListView.IsVisible = false;
@@ -80,6 +87,14 @@ public partial class Landing : ContentPage
         if (sender is Frame frame && frame.BindingContext is Item thisItem)
         {
             await Navigation.PushModalAsync(new ViewItem(thisItem.Id));
+        }
+    }
+
+    private async void CategoryFrame_Tapped(object sender, TappedEventArgs e)
+    {
+        if (sender is Frame frame && frame.BindingContext is ItemCategory category) 
+        {
+            await DisplayAlert("Page", $"this is a {category}.", "Ok");
         }
     }
 }

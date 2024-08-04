@@ -5,38 +5,57 @@
              Title="Landing"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="White">
-    
+
     <Grid RowDefinitions="*,*">
-       
+
 
         <Grid RowDefinitions="Auto, Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
             <Frame CornerRadius="0">
                 <Label Text="MyShopApp"/>
             </Frame>
             <Grid Grid.Row="1" Padding="5">
-                
+                <StackLayout>
+                    <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="LightGray" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
+                    <!--<AbsoluteLayout Margin="5,5,5,5" ZIndex="100" >-->
+                    <CollectionView x:Name="CategoriesCollectionView" HorizontalOptions="FillAndExpand" Margin="0,5">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
 
-                <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="LightGray" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
-                <!--<AbsoluteLayout Margin="5,5,5,5" ZIndex="100" >-->
+                    <Frame x:Name="CategoryFrame" Padding="10" BackgroundColor="White" CornerRadius="50" BorderColor="LightGray" WidthRequest="70" HeightRequest="70" HorizontalOptions="Start">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CategoryFrame_Tapped"/>
+                        </Frame.GestureRecognizers>
+                                    <Label Text="{Binding}" TextColor="Black"  FontSize="12"/>
+                    </Frame>
 
+                    </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
                     <CollectionView x:Name="SearchResultsListView">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Frame  BackgroundColor="White" BorderColor="White" Margin="0" Padding="5">
+                                <Frame  BackgroundColor="White" Margin="0" Padding="5" >
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                                     </Frame.GestureRecognizers>
-                                    <Label FontSize="16" TextColor="Black" Text="{Binding Name}"/>
+                                    <StackLayout>
+                                        <Image/>
+                                        <Label FontSize="16" TextColor="Black" Text="{Binding Name}"/>
+                                    </StackLayout>
+
                                 </Frame>
 
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                <!--</AbsoluteLayout>-->
-
+                    <!--</AbsoluteLayout>-->
+                </StackLayout>
             </Grid>
-           
+
             <Grid Grid.Row="2">
                 <Border Background="LightGray" Padding="5" Margin="5" Stroke="LightGray" StrokeShape="RoundRectangle 5">
                     <StackLayout Spacing="15">
@@ -49,7 +68,7 @@
 
                 </Border>
             </Grid>
-            
+
         </Grid>
         <Grid Grid.Row="1" x:Name="LoadingIndicatorStack">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">

@@ -10,7 +10,7 @@ namespace MyShopApp.Models
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum ItemCategory
     {
-        Unasssigned = 1,
+        Unassigned = 1,
 
         Electronics = 2,
 
@@ -31,7 +31,5 @@ namespace MyShopApp.Models
         Groceries = 10,
 
         Automotive = 11
-
-
     }
 }

@@ -8,65 +8,71 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyShopApp
-build_property.ProjectDir = C:\Users\Matthew-LT\source\repos\MyShopApp\
+build_property.ProjectDir = C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/App.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/AppShell.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/MainPage.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Resources/Styles/Colors.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Resources/Styles/Styles.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Views/ItemViews/AddNewItem.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/AddNewItem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.AddNewItem.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\AddNewItem.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\AddNewItem.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Views/ItemViews/ViewAllCategories.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewAllCategories.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.ViewAllCategories.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\ViewAllCategories.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\ViewAllCategories.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Views/ItemViews/ViewAllItems.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewAllItems.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.ViewAllItems.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\ViewAllItems.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\ViewAllItems.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Views/ItemViews/ViewItem.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewItem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.ViewItem.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\ViewItem.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\ViewItem.xaml
 
-[C:/Users/Matthew-LT/source/repos/MyShopApp/Views/LandingViews/Landing.xaml]
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewItemsByCategory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.ViewItemsByCategory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\ViewItemsByCategory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\ViewItemsByCategory.xaml
+
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/LandingViews/Landing.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.LandingViews.Landing.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LandingViews\Landing.xaml

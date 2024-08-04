@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.myshopapp</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>2411AAAE6691AC2617E0607EA6BA866FD9DB728EEB341865B1C5DF9A1CB889A5</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.myshopapp_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.myshopapp_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,272 +26,272 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-03T18:40:54.253</Modified>
+      <Modified>2024-08-04T09:55:59.777</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2024-08-03T16:01:37.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.runtimeconfig.json">
       <PackagePath>MyShopApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-03T10:36:07.905</Modified>
+      <Modified>2024-08-04T07:32:41.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.dll">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.dll">
       <PackagePath>MyShopApp.dll</PackagePath>
-      <Modified>2024-08-03T18:40:52.768</Modified>
+      <Modified>2024-08-04T09:55:59.235</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyShopApp.exe</PackagePath>
-      <Modified>2024-08-03T18:40:52.831</Modified>
+      <Modified>2024-08-04T09:55:59.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2024-08-02T13:33:33.173</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2024-08-02T13:34:00.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2024-08-02T13:34:00.391</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2024-08-02T13:34:00.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2024-08-02T13:34:00.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2024-08-02T13:34:00.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2024-08-02T13:33:33.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2024-08-02T13:33:33.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.270</Modified>
+      <Modified>2024-08-04T07:32:13.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.266</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.262</Modified>
+      <Modified>2024-08-04T07:32:13.140</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.258</Modified>
+      <Modified>2024-08-04T07:32:13.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prev.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prev.scale-100.jpg">
       <PackagePath>prev.scale-100.jpg</PackagePath>
-      <Modified>2024-08-03T12:25:12.254</Modified>
+      <Modified>2024-08-04T07:32:13.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Matthew-LT\source\repos\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.deps.json">
+    <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.deps.json">
       <PackagePath>MyShopApp.deps.json</PackagePath>
-      <Modified>2024-08-03T16:01:37.474</Modified>
+      <Modified>2024-08-04T07:32:41.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matthew-LT\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -23,7 +23,7 @@ public partial class ViewItem : ContentPage
         if (item != null)
         {
             ItemName.Text = item.Name;
-            ItemPrice.Text = item.Price.ToString();
+            ItemPrice.Text = $"£{item.Price.ToString()}";
             ItemCategory.Text = item.ItemsCategory.ToString();
             ItemDescription.Text = item.Description;
 
@@ -32,5 +32,10 @@ public partial class ViewItem : ContentPage
         {
             await DisplayAlert("Error", "There was an error obtaining item information!", "Ok");
         }
+    }
+
+    private async void BackButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopModalAsync();
     }
 }

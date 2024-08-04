@@ -27,5 +27,15 @@ namespace MyShopApp.Services
         {
             return itemServices.GetItemByItemID(ID);
         }
+
+        public Task<List<ItemCategory>> GetItemCategories()
+        {
+            return itemServices.GetItemCategories();
+        }
+
+        public Task<List<Item>> GetItemsByCategory(ItemCategory itemCategory)
+        {
+            return itemServices.GetItemsByCategory(itemCategory);
+        }
     }
 }

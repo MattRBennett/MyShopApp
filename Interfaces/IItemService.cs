@@ -11,5 +11,7 @@ namespace MyShopApp.Interfaces
     {
         Task<List<Item>> GetAllItems();
         Task<Item> GetItemByItemID(int ID);
+        Task<List<ItemCategory>> GetItemCategories();
+        Task<List<Item>> GetItemsByCategory(ItemCategory itemCategory);
     }
 }

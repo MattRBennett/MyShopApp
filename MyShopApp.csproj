@@ -92,6 +92,9 @@
 	  <MauiXaml Update="Views\ItemViews\ViewItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemViews\ViewItemsByCategory.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LandingViews\Landing.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

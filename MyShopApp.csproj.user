@@ -26,6 +26,9 @@
     <MauiXaml Update="Views\ItemViews\ViewItem.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\ItemViews\ViewItemsByCategory.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\LandingViews\Landing.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
