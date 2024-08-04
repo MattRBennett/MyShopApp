@@ -17,6 +17,9 @@
     <MauiXaml Update="Views\ItemViews\AddNewItem.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\ItemViews\DeleteItem.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\ItemViews\ViewAllCategories.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -26,4 +26,12 @@ public partial class ViewAllItems : ContentPage
 		await Navigation.PopModalAsync();
 
     }
+
+    private async void ItemTapped(object sender, TappedEventArgs e)
+    {
+		if (sender is Frame frame && frame.BindingContext is Item item) 
+		{
+			await Navigation.PushModalAsync(new ViewItem(item.Id));
+		}
+    }
 }

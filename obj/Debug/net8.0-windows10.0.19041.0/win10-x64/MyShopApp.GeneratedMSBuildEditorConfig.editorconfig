@@ -48,6 +48,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\AddNewItem.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\AddNewItem.xaml
 
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/DeleteItem.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.DeleteItem.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\DeleteItem.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\DeleteItem.xaml
+
 [C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewAllCategories.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.ViewAllCategories.xaml

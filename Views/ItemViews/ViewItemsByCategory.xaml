@@ -2,11 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.ItemViews.ViewItemsByCategory"
-             Title="ViewItemsByCategory">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="ViewItemsByCategory"
+             BackgroundColor="LightGray">
+    <Grid RowDefinitions="Auto, Auto, *, Auto">
+        <Frame Grid.Row="0" CornerRadius="0">
+            
+       
+            <Grid  ColumnDefinitions="Auto, *, Auto">
+                <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
+                <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
+            </Grid>
+
+        </Frame>
+        <Grid Grid.Row="1" Margin="10">
+            <Label x:Name="CategoryNameLabel" TextColor="Black" FontSize="18"/>
+        </Grid>
+        
+        <Grid Grid.Row="2" x:Name="Content" Margin="10">
+            <ScrollView>
+                <CollectionView x:Name="ItemsCollectionView" HorizontalOptions="FillAndExpand">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame x:Name="ItemFrame" Margin="10, 15" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray" HorizontalOptions="Start">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" TextColor="Black"  FontSize="12"/>
+                                    <Label Text="{Binding Price}" TextColor="Black"  FontSize="12"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </Grid>
+        <Grid Grid.Row="2" x:Name="NothingFound">
+            <Label Text="No results found..." VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <Grid Grid.Row="3" ColumnDefinitions="*,*" Margin="10 ,5,10,10" ColumnSpacing="10">
+            <Button Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+            <Button Grid.Column="1" Text="Add To Cart" CornerRadius="10"/>
+        </Grid>
+    </Grid>
 </ContentPage>

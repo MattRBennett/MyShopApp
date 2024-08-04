@@ -83,6 +83,9 @@
 	  <MauiXaml Update="Views\ItemViews\AddNewItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemViews\DeleteItem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ItemViews\ViewAllCategories.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

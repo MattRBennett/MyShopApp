@@ -10,8 +10,8 @@ public partial class Landing : ContentPage
     public Landing()
     {
         InitializeComponent();
-        Content.IsVisible = false;
-        LoadingIndicatorStack.IsVisible = true;
+        //Content.IsVisible = false;
+        //LoadingIndicatorStack.IsVisible = true;
         SearchResultsListView.IsVisible = false;
 
     }
@@ -23,16 +23,15 @@ public partial class Landing : ContentPage
         ItemSearchBar.Text = "";
         Item item = new();
         items = await item.GetItems();
-        var fetchedcategorues = await App.Service.GetItemCategories();
+        var fetchedcategories = await App.Service.GetItemCategories();
 
-        categories.AddRange(fetchedcategorues);
+        categories.AddRange(fetchedcategories);
         CategoriesCollectionView.ItemsSource = categories;
 
-        var myitems = await App.Service.GetItemsByCategory(ItemCategory.Unassigned);
+        //var myitems = await App.Service.GetItemsByCategory(ItemCategory.Unassigned);
 
-        LoadingIndicatorStack.IsVisible = false;
-        Content.IsVisible = true;
-
+        //LoadingIndicatorStack.IsVisible = false;
+        //Content.IsVisible = true;
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -84,17 +83,27 @@ public partial class Landing : ContentPage
 
     private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        if (sender is Frame frame && frame.BindingContext is Item thisItem)
+        if (sender is Frame frame && frame.BindingContext is Item ThisItem)
         {
-            await Navigation.PushModalAsync(new ViewItem(thisItem.Id));
+            await Navigation.PushModalAsync(new ViewItem(ThisItem.Id));
         }
     }
 
     private async void CategoryFrame_Tapped(object sender, TappedEventArgs e)
     {
-        if (sender is Frame frame && frame.BindingContext is ItemCategory category) 
+        if (sender is Frame frame && frame.BindingContext is ItemCategory ThisCategory) 
         {
-            await DisplayAlert("Page", $"this is a {category}.", "Ok");
+            await Navigation.PushModalAsync(new ViewItemsByCategory(ThisCategory));
         }
+    }
+
+    private async void DeleteButton_Clicked(object sender, EventArgs e)
+    {
+        //await Navigation.PushModalAsync(new itemde)
+    }
+
+    private async void AddNewItem_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new AddNewItem());
     }
 }

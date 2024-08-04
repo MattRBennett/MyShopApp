@@ -2,6 +2,8 @@
 using MyShopApp.Models;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.Net.Http.Json;
+using System.Text;
 using static MyShopApp.Services.ItemService;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -40,7 +42,7 @@ namespace MyShopApp.Services
             };
         }
 
-        
+
         public async Task<List<Item>> GetAllItems()
         {
             items = new List<Item>();
@@ -126,7 +128,7 @@ namespace MyShopApp.Services
 
             return item;
         }
-        
+
 
         public async Task<List<ItemCategory>> GetItemCategories()
         {
@@ -212,6 +214,29 @@ namespace MyShopApp.Services
             }
 
             return items;
+        }
+
+        public async Task AddNewItem(Item NewItem)
+        {
+            Uri uri = new(string.Format($"{Constants.apiURL}Item/AddNewItem"));
+
+            try
+            {
+                HttpResponseMessage response = await client.PostAsJsonAsync(uri, NewItem);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(@"New item successfully saved.");
+                }
+                else
+                {
+                    Debug.WriteLine($"Failed to add new item. Status code: {response.StatusCode}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error while adding new item: {ex.Message}");
+            }
         }
     }
 }

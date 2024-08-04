@@ -37,5 +37,10 @@ namespace MyShopApp.Services
         {
             return itemServices.GetItemsByCategory(itemCategory);
         }
+
+        public Task AddNewItem(Item NewItem)
+        {
+            return itemServices.AddNewItem(NewItem);
+        }
     }
 }

@@ -2,11 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.ItemViews.AddNewItem"
-             Title="AddNewItem">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Add New Item"
+             BackgroundColor="White">
+    <Grid RowDefinitions="Auto, *, Auto">
+        <Grid Grid.Row="0">
+            <Frame CornerRadius="0">
+                <Label Text="MyShopApp"/>
+            </Frame>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ScrollView>
+                <Frame BackgroundColor="LightGrey" Margin="10" CornerRadius="10" BorderColor="LightGrey">
+                    <StackLayout>
+                        <Label Text="Add New Item" FontSize="20" Margin="0,0,0,15" FontAttributes="Bold" TextColor="Black"/>
+
+                        <StackLayout Spacing="15">
+                            <StackLayout>
+                                <Label Text="Item Name:" TextColor="Black" FontAttributes="Bold"/>
+                                <Entry Placeholder="Enter item name..." VerticalTextAlignment="End" x:Name="NameOfItem"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Label Text="Item Description:" TextColor="Black" FontAttributes="Bold"/>
+                                <Editor AutoSize="TextChanges" Placeholder="Enter item description..." VerticalTextAlignment="End" x:Name="DescriptionOfItem"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Label Text="Item Price:" TextColor="Black" FontAttributes="Bold"/>
+                                <Entry Placeholder="Enter item price..." Keyboard="Numeric" VerticalTextAlignment="End" x:Name="PriceOfItem"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Label Text="Item Category:" TextColor="Black" FontAttributes="Bold"/>
+                                <Picker BackgroundColor="White" TextColor="Black" x:Name="CategoryOfItem" SelectedIndex="0"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+        </Grid>
+        <Grid Grid.Row="2" ColumnDefinitions="*,*" ColumnSpacing="10" Margin="10">
+            <Button Grid.Column="0" Clicked="BackButton_Clicked" Text="Back"/>
+            <Button Grid.Column="1" Clicked="AddButton_Clicked" Text="Add"/>
+        </Grid>
+    </Grid>
 </ContentPage>

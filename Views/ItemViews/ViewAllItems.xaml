@@ -2,21 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.ItemViews.ViewAllItems"
-             Title="ViewAllItems">
-    <VerticalStackLayout>
-        <Label Text="All items"/>
-        <CollectionView x:Name="ItemsCollecitonView">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Frame>
-                        <StackLayout>
-                            <Label Text="{Binding Name}"/>
-                            <Label Text="{Binding Price}"/>
-                        </StackLayout>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button Text="Back" Clicked="Button_Clicked"/>
-    </VerticalStackLayout>
+             Title="ViewAllItems"
+             BackgroundColor="LightGray">
+    <Grid RowDefinitions="Auto, *, Auto">
+        <Grid Grid.Row="0">
+            <Frame CornerRadius="0">
+                <Grid ColumnDefinitions="Auto, *, Auto">
+                    <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
+                    <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                    <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
+                </Grid>
+
+            </Frame>
+        </Grid>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid RowDefinitions="Auto, *">
+                <Label Grid.Row="0" Text="All items" TextColor="Black" FontAttributes="Bold" FontSize="22" Margin="0,0,0,5"/>
+                <ScrollView Grid.Row="1">
+
+                    <CollectionView x:Name="ItemsCollecitonView" >
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="5" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="White" BorderColor="White" HasShadow="True">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="ItemTapped"/>
+                                    </Frame.GestureRecognizers>
+                                    <StackLayout>
+                                        <Label Text="{Binding Name}" TextColor="Black"/>
+                                        <Label Text="{Binding Price}" TextColor="Black"/>
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="2" Margin="10">
+            <Button Text="Back" Clicked="Button_Clicked"/>
+        </Grid>
+    </Grid>
 </ContentPage>

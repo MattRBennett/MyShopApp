@@ -359,3 +359,5 @@ C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.1904
 C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cart.scale-100.png
+C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png

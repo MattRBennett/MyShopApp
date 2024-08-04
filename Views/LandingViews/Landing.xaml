@@ -7,34 +7,36 @@
              BackgroundColor="White">
 
     <Grid RowDefinitions="*,*">
-
-
         <Grid RowDefinitions="Auto, Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
-            <Frame CornerRadius="0">
-                <Label Text="MyShopApp"/>
+            <Frame CornerRadius="0" Grid.Row="0">
+                <Grid ColumnDefinitions="Auto, *, Auto">
+                    <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
+                    <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                    <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
+                </Grid>
+               
             </Frame>
             <Grid Grid.Row="1" Padding="5">
                 <StackLayout>
                     <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="LightGray" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
                     <!--<AbsoluteLayout Margin="5,5,5,5" ZIndex="100" >-->
+                    <ScrollView VerticalScrollBarVisibility="Never">
                     <CollectionView x:Name="CategoriesCollectionView" HorizontalOptions="FillAndExpand" Margin="0,5">
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Horizontal" />
-                    </CollectionView.ItemsLayout>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-
-                    <Frame x:Name="CategoryFrame" Padding="10" BackgroundColor="White" CornerRadius="50" BorderColor="LightGray" WidthRequest="70" HeightRequest="70" HorizontalOptions="Start">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="CategoryFrame_Tapped"/>
-                        </Frame.GestureRecognizers>
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame x:Name="CategoryFrame" Padding="0" BackgroundColor="White" CornerRadius="50" BorderColor="LightGray" WidthRequest="70" HeightRequest="70" HorizontalOptions="Start" Margin="0,0">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="CategoryFrame_Tapped"/>
+                                    </Frame.GestureRecognizers>
                                     <Label Text="{Binding}" TextColor="Black"  FontSize="12"/>
-                    </Frame>
-
-                    </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    </ScrollView>
                     <CollectionView x:Name="SearchResultsListView">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
@@ -46,9 +48,7 @@
                                         <Image/>
                                         <Label FontSize="16" TextColor="Black" Text="{Binding Name}"/>
                                     </StackLayout>
-
                                 </Frame>
-
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -59,24 +59,21 @@
             <Grid Grid.Row="2">
                 <Border Background="LightGray" Padding="5" Margin="5" Stroke="LightGray" StrokeShape="RoundRectangle 5">
                     <StackLayout Spacing="15">
-                        <Button Text="Add Item"/>
-                        <Button Text="Delete Item"/>
+                        <Button Text="Add Item" Clicked="AddNewItem_Clicked"/>
+                        <Button Text="Delete Item" Clicked="DeleteButton_Clicked"/>
                         <Button Text="See All Items" Clicked="Button_Clicked"/>
                         <Button Text="See All Categories"/>
                         <Button Text="Back" Clicked="Button_Clicked_1"/>
                     </StackLayout>
-
                 </Border>
             </Grid>
 
         </Grid>
-        <Grid Grid.Row="1" x:Name="LoadingIndicatorStack">
+        <!--<Grid Grid.Row="1" x:Name="LoadingIndicatorStack">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <ActivityIndicator/>
                 <Label Text="Loading..."/>
             </StackLayout>
-
-
-        </Grid>
+        </Grid>-->
     </Grid>
 </ContentPage>
