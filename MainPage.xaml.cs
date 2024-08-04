@@ -16,7 +16,8 @@ namespace MyShopApp
             //var route = $"{nameof(Landing)}";
 
             //await Shell.Current.GoToAsync(route);
-            await Navigation.PushModalAsync(new Landing());
+            //MainPage = AppShell();
+            //await Navigation.PushModalAsync(new Landing());
         }
     }
 

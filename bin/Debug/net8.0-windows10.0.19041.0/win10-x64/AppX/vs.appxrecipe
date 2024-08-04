@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-04T14:22:50.584</Modified>
+      <Modified>2024-08-04T14:53:01.783</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyShopApp.dll">
       <PackagePath>MyShopApp.dll</PackagePath>
-      <Modified>2024-08-04T14:22:48.946</Modified>
+      <Modified>2024-08-04T14:53:00.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyShopApp.exe</PackagePath>
-      <Modified>2024-08-04T14:22:49.092</Modified>
+      <Modified>2024-08-04T14:53:00.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matthew-LT\Documents\GitHub\MyShopApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

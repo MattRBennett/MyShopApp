@@ -11,6 +11,6 @@ namespace MyShopApp
     {
 
         //public static string apiURL = "";
-        public static string apiURL = DeviceInfo.Platform == DevicePlatform.WinUI ? "https://localhost:7257/api/" : DeviceInfo.Platform == DevicePlatform.Android ? "https://10.0.2.2:7257/api/" : "https://localhost:7257/api/";
+        public static string apiURL = DeviceInfo.Platform == DevicePlatform.WinUI ? "https://localhost:7257/api/" : DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:5163/api/" : "https://localhost:5163/api/";
     }
 }
