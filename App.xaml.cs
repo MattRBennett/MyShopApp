@@ -1,5 +1,6 @@
 ﻿using MyShopApp.Services;
 using MyShopApp.Views;
+using MyShopApp.Views.AuthenticationViews;
 
 namespace MyShopApp
 {
@@ -10,10 +11,10 @@ namespace MyShopApp
         {
             InitializeComponent();
 
-            Service = new ServiceManager(new ItemService());
+            Service = new ServiceManager(new ItemService(), new AuthenticationService());
 
-            //MainPage = new MainPage();
-            MainPage = new AppShell();
+            MainPage = new LoginSignup();
+            //MainPage = new AppShell();
         }
     }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyShopApp.Views.AuthenticationViews.LoginSignup"
+             Title="LoginSignup">
+    <Grid RowDefinitions="Auto, *">
+        <Grid Grid.Row="0">
+            <Label Text="Login"/> 
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <StackLayout VerticalOptions="Center" Spacing="10">
+
+                <StackLayout>
+                    <Label Text="Username"/>
+                    <Entry x:Name="UsernameEntry" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Password"/>
+                    <Entry x:Name="PasswordEntry"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Continue"/>
+                    <Button Text="Submit" Clicked="Button_Clicked"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -11,13 +11,18 @@ namespace MyShopApp.Services
 {
     public class ServiceManager
     {
-        readonly IItemService itemServices;
 
-        public ServiceManager(IItemService itemService)
+        
+        readonly IItemService itemServices;
+        readonly IAuthenticationService authenticationServices;
+
+        public ServiceManager(IItemService itemService, IAuthenticationService authenticationService)
         {
             itemServices = itemService;
+            authenticationServices = authenticationService;
         }
 
+        #region ItemService
         public Task<List<Item>> GetAllItems()
         {
             return itemServices.GetAllItems();
@@ -38,9 +43,32 @@ namespace MyShopApp.Services
             return itemServices.GetItemsByCategory(itemCategory);
         }
 
-        public Task AddNewItem(Item NewItem)
+        public Task<ApiDataResponse<Item>> AddNewItem(Item NewItem)
         {
             return itemServices.AddNewItem(NewItem);
         }
+
+        public Task<ApiDataResponse<Item>> UpdateItem(Item UpdatedItem)
+        {
+            return itemServices.UpdateItem(UpdatedItem);
+        }
+
+        public Task<ApiDataResponse<Item>> DeleteItem(int ItemID)
+        {
+            return itemServices.DeleteItem(ItemID);
+        }
+
+        #endregion
+
+        #region AuthenticationService
+
+        
+
+        public Task<ApiDataResponse<int>> Login(string username, string password)
+        {
+            return authenticationServices.Login(username, password);
+        }
+
+        #endregion
     }
 }

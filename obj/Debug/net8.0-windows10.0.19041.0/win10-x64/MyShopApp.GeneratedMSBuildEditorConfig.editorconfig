@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Resources.Styles
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/AuthenticationViews/LoginSignup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.AuthenticationViews.LoginSignup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AuthenticationViews\LoginSignup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AuthenticationViews\LoginSignup.xaml
+
 [C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/AddNewItem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.AddNewItem.xaml
@@ -53,6 +59,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.DeleteItem.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\DeleteItem.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\DeleteItem.xaml
+
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/EditItem.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.EditItem.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemViews\EditItem.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemViews\EditItem.xaml
 
 [C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/ViewAllCategories.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

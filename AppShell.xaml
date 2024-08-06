@@ -9,8 +9,23 @@
     Shell.FlyoutBehavior="Flyout"
     Title="MyShopApp">
 
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+                  HeightRequest="50">
+                <Image Aspect="AspectFill"
+                       Source="unassigned.png"
+                       Opacity="0.6" />
+                <Label Text="MyShopApp"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
 
-    <FlyoutItem Title="MyShopApp" FlyoutDisplayOptions="AsMultipleItems">
+    <FlyoutItem Title="MyShopApp" FlyoutDisplayOptions="AsMultipleItems" >
         <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"

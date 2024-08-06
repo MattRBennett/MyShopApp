@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.ItemViews.AddNewItem"
              Title="Add New Item"
-             BackgroundColor="White">
+             BackgroundColor="LightGray">
     <Grid RowDefinitions="Auto, *, Auto">
         <Grid Grid.Row="0">
             <Frame CornerRadius="0">
@@ -12,7 +12,7 @@
         </Grid>
         <Grid Grid.Row="1">
             <ScrollView>
-                <Frame BackgroundColor="LightGrey" Margin="10" CornerRadius="10" BorderColor="LightGrey">
+                <Frame BackgroundColor="White" Margin="10" CornerRadius="10" BorderColor="LightGrey">
                     <StackLayout>
                         <Label Text="Add New Item" FontSize="20" Margin="0,0,0,15" FontAttributes="Bold" TextColor="Black"/>
 
@@ -35,6 +35,35 @@
                             <StackLayout>
                                 <Label Text="Item Category:" TextColor="Black" FontAttributes="Bold"/>
                                 <Picker BackgroundColor="White" TextColor="Black" x:Name="CategoryOfItem" SelectedIndex="0"/>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <!--<SwipeView >
+                                    <SwipeView.LeftItems>
+                                        <SwipeItems>
+                                            <SwipeItemView Invoked="RemoveImage_Invoked">
+                                                <Frame Grid.Column="0" VerticalOptions="Fill" HorizontalOptions="Fill" WidthRequest="85" BackgroundColor="Salmon" Margin="0,0,5,0">
+                                                    <Grid VerticalOptions="Center" HorizontalOptions="Center" RowDefinitions="Auto,Auto">
+                                                        <Image Grid.Row="0" Source="lighttrash.png" Margin="0,0,0,5"/>
+                                                        <Label Grid.Row="1" Text="Delete" FontSize="12" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                                                    </Grid>
+                                                </Frame>
+                                            </SwipeItemView>
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>-->
+                               
+                                <!--</SwipeView>-->
+
+                                <Grid x:Name="ImageStack" RowDefinitions="*, Auto" RowSpacing="5" Margin="0,0,0,10">
+                                    <Image Grid.Row="0" x:Name="ChosenImage"  VerticalOptions="CenterAndExpand" MaximumWidthRequest="300" Aspect="AspectFit"/>
+                                    <!--<Label x:Name="ImageName" Grid.Column="0"/>-->
+                                    <!--<ImageButton Clicked="ImageButton_Clicked" Grid.Column="1" Source="cross.png"/>-->
+                                    <Button Grid.Row="1" Text="Remove Image" BackgroundColor="Salmon" Clicked="RemoveButton_Clicked"/>
+                                </Grid>
+
+                               
+                                <Button x:Name="AddImageButton" Text="Add Image" Clicked="AddImageButton_Clicked"/>
+
                             </StackLayout>
 
                         </StackLayout>

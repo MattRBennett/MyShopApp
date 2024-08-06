@@ -11,19 +11,6 @@ namespace MyShopApp.Services
 {
     public class ItemService : IItemService
     {
-        public class ApiListResponse<T>
-        {
-            public List<T> Data { get; set; }
-            public bool Success { get; set; }
-            public string Message { get; set; }
-        }
-
-        public class ApiDataResponse<T>
-        {
-            public T? Data { get; set; }
-            public bool Success { get; set; }
-            public string Message { get; set; }
-        }
 
         public List<Item> items { get; private set; }
         public List<ItemCategory> categories { get; private set; }
@@ -216,8 +203,10 @@ namespace MyShopApp.Services
             return items;
         }
 
-        public async Task AddNewItem(Item NewItem)
+        public async Task<ApiDataResponse<Item>> AddNewItem(Item NewItem)
         {
+            ApiDataResponse<Item> apiDataResponse = new();
+
             Uri uri = new(string.Format($"{Constants.apiURL}Item/AddNewItem"));
 
             try
@@ -227,16 +216,92 @@ namespace MyShopApp.Services
                 if (response.IsSuccessStatusCode)
                 {
                     Debug.WriteLine(@"New item successfully saved.");
+
+                    apiDataResponse.Success = true;
+                    apiDataResponse.Message = "Item has been successfully added.";
                 }
                 else
                 {
                     Debug.WriteLine($"Failed to add new item. Status code: {response.StatusCode}");
+
+                    apiDataResponse.Success = false;
+                    apiDataResponse.Message = "Failed to add new item. Status code: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error while adding new item: {ex.Message}");
             }
+
+            return apiDataResponse;
+        }
+
+        public async Task<ApiDataResponse<Item>> UpdateItem(Item UpdatedItem)
+        {
+            ApiDataResponse<Item> apiDataResponse = new();
+
+            Uri uri = new(string.Format($"{Constants.apiURL}Item/UpdateItem"));
+
+            try
+            {
+                HttpResponseMessage response = await client.PutAsJsonAsync(uri, UpdatedItem);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(@"Item has been successfully updated.");
+
+                    apiDataResponse.Success = true;
+                    apiDataResponse.Message = "Item has been successfully updated.";
+                }
+                else
+                {
+                    Debug.WriteLine($"Failed to update item. Status code: {response.StatusCode}");
+
+                    apiDataResponse.Success = false;
+                    apiDataResponse.Message = "Failed to update item. Status code: {response.StatusCode}";
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error while updating item: {ex.Message}");
+            }
+
+            return apiDataResponse;
+        }
+
+        public async Task<ApiDataResponse<Item>> DeleteItem(int ItemID)
+        {
+            ApiDataResponse<Item> apiDataResponse = new();
+
+            Uri uri = new(string.Format($"{Constants.apiURL}Item/DeleteItem?Id={ItemID}"));
+
+            try
+            {
+                HttpResponseMessage response = await client.DeleteAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(@"Item has been successfully deleted.");
+
+                    apiDataResponse.Success = true;
+                    apiDataResponse.Message = "Item has been successfully updated.";
+                }
+                else
+                {
+                    Debug.WriteLine($"Failed to delete item. Status code: {response.StatusCode}");
+
+                    apiDataResponse.Success = false;
+                    apiDataResponse.Message = "Failed to delete item. Status code: {response.StatusCode}";
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error while deleting item: {ex.Message}");
+            }
+
+            return apiDataResponse;
         }
     }
 }

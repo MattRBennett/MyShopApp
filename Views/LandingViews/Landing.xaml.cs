@@ -6,7 +6,7 @@ namespace MyShopApp.Views;
 public partial class Landing : ContentPage
 {
     List<Item> items = new();
-    List<ItemCategory> categories = new();
+    List<CategoryList> categories = new();
     public Landing()
     {
         InitializeComponent();
@@ -23,8 +23,8 @@ public partial class Landing : ContentPage
         ItemSearchBar.Text = "";
         Item item = new();
         items = await item.GetItems();
-        var fetchedcategories = await App.Service.GetItemCategories();
-
+        //var fetchedcategories = await App.Service.GetItemCategories();
+        List<CategoryList> fetchedcategories = await item.GetAllCategoryItems();
         categories.AddRange(fetchedcategories);
         CategoriesCollectionView.ItemsSource = categories;
 
@@ -42,10 +42,15 @@ public partial class Landing : ContentPage
         await Navigation.PushModalAsync(new ViewAllItems());
     }
 
-    private async void Button_Clicked_1(object sender, EventArgs e)
+    private async void EditItem_Clicked(object sender, EventArgs e)
     {
         //await Shell.Current.GoToAsync("..");
-        await Navigation.PopModalAsync();
+        //await Navigation.PopModalAsync();
+
+
+        //await Shell.Current.GoToAsync("//MainPage");
+
+        
     }
 
     private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
@@ -86,14 +91,21 @@ public partial class Landing : ContentPage
         if (sender is Frame frame && frame.BindingContext is Item ThisItem)
         {
             await Navigation.PushModalAsync(new ViewItem(ThisItem.Id));
+
+            //var route = $"{nameof(ViewItem)}";
+
+            //await Shell.Current.GoToAsync($"{route}?SelectedItemID={ThisItem.Id}");
         }
     }
 
     private async void CategoryFrame_Tapped(object sender, TappedEventArgs e)
     {
-        if (sender is Frame frame && frame.BindingContext is ItemCategory ThisCategory) 
+        if (sender is Frame frame && frame.BindingContext is CategoryList ThisCategory) 
         {
             await Navigation.PushModalAsync(new ViewItemsByCategory(ThisCategory));
+            //var route = $"{nameof(ViewItemsByCategory)}";
+
+            //await Shell.Current.GoToAsync($"{route}?ItemCategory={ThisCategory}");
         }
     }
 
@@ -105,5 +117,14 @@ public partial class Landing : ContentPage
     private async void AddNewItem_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushModalAsync(new AddNewItem());
+
+        //var route = $"{nameof(AddNewItem)}";
+
+        //await Shell.Current.GoToAsync($"{route}");
+    }
+
+    private async void ViewAllCategories_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new ViewAllCategories());
     }
 }

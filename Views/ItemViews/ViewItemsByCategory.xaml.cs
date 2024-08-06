@@ -4,14 +4,14 @@ namespace MyShopApp.Views.ItemViews;
 
 public partial class ViewItemsByCategory : ContentPage
 {
-	public ItemCategory ItemsCategory;
+	public CategoryList ItemsCategory;
 
 	public List<Item> items = new();
-	public ViewItemsByCategory(ItemCategory itemCategory)
+	public ViewItemsByCategory(CategoryList ItemCategory)
 	{
 		InitializeComponent();
 
-        ItemsCategory = itemCategory;
+        ItemsCategory = ItemCategory;
     }
 
     protected async override void OnAppearing()
@@ -20,9 +20,11 @@ public partial class ViewItemsByCategory : ContentPage
         Content.IsVisible = false;
         NothingFound.IsVisible = false;
 
-        CategoryNameLabel.Text = ItemsCategory.ToString();
+        CategoryNameLabel.Text = ItemsCategory.CategoryName;
 
-        var GetItems = await App.Service.GetItemsByCategory(ItemsCategory);
+        ItemCategory category = (ItemCategory)ItemsCategory.CategoryID;
+
+        var GetItems = await App.Service.GetItemsByCategory(category);
         if (GetItems.Count > 0)
         {
             items.AddRange(GetItems);

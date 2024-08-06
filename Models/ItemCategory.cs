@@ -14,22 +14,24 @@ namespace MyShopApp.Models
 
         Electronics = 2,
 
-        HomeAppliances = 3,
+        Appliances = 3,
 
         Fashion = 4,
 
-        HealthAndBeauty = 5,
+        Health = 5,
 
-        SportsAndOutdoors = 6,
+        Sports = 6,
 
-        BooksAndMedia = 7,
+        Media = 7,
 
-        ToysAndGames = 8,
+        Toys = 8,
 
-        HomeAndFurniture = 9,
+        Furniture = 9,
 
         Groceries = 10,
 
-        Automotive = 11
+        Automotive = 11,
+
+        Outdoors = 12
     }
 }

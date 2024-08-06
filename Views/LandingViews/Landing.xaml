@@ -2,40 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.Landing"
-             Title="Landing"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundColor="White">
+             Title="MyShopApp"
+             BackgroundColor="White"
+             >
 
-    <Grid RowDefinitions="*,*">
-        <Grid RowDefinitions="Auto, Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
-            <Frame CornerRadius="0" Grid.Row="0">
+    <Grid RowDefinitions="*">
+        <Grid RowDefinitions="Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
+            <!--<Frame CornerRadius="0" Grid.Row="0">
                 <Grid ColumnDefinitions="Auto, *, Auto">
                     <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
                     <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
                     <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
                 </Grid>
                
-            </Frame>
-            <Grid Grid.Row="1" Padding="5">
+            </Frame>-->
+            <Grid Grid.Row="0" Padding="5">
                 <StackLayout>
-                    <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="LightGray" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
+                    <Border Padding="0" Margin="0" BackgroundColor="White" Stroke="Black" StrokeShape="RoundRectangle 25">
+                        <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="Transparent" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
+                    </Border>
+
                     <!--<AbsoluteLayout Margin="5,5,5,5" ZIndex="100" >-->
-                    <ScrollView VerticalScrollBarVisibility="Never">
-                    <CollectionView x:Name="CategoriesCollectionView" HorizontalOptions="FillAndExpand" Margin="0,5">
-                        <CollectionView.ItemsLayout>
-                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame x:Name="CategoryFrame" Padding="0" BackgroundColor="White" CornerRadius="50" BorderColor="LightGray" WidthRequest="70" HeightRequest="70" HorizontalOptions="Start" Margin="0,0">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="CategoryFrame_Tapped"/>
-                                    </Frame.GestureRecognizers>
-                                    <Label Text="{Binding}" TextColor="Black"  FontSize="12"/>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
+                    <ScrollView VerticalScrollBarVisibility="Never" Margin="5">
+                        <CollectionView x:Name="CategoriesCollectionView" HorizontalOptions="FillAndExpand" Margin="0,5">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame x:Name="CategoryFrame" Padding="0" BackgroundColor="White" CornerRadius="0" BorderColor="White" WidthRequest="70" HeightRequest="70" HorizontalOptions="Start" Margin="0,0">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="CategoryFrame_Tapped"/>
+                                        </Frame.GestureRecognizers>
+                                        <StackLayout>
+                                            <Border Padding="0" Margin="0" Stroke="LightGray" StrokeShape="RoundRectangle 40">
+                                                <Image Margin="0" x:Name="CategoryImage" Source="{Binding Image}" Aspect="AspectFit" Scale="0.5" MaximumHeightRequest="50" MinimumWidthRequest="30"/>
+                                            </Border>
+                                            <Label Text="{Binding CategoryName}" TextColor="Black"  FontSize="12" HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
                     </ScrollView>
                     <CollectionView x:Name="SearchResultsListView">
                         <CollectionView.ItemTemplate>
@@ -56,16 +65,16 @@
                 </StackLayout>
             </Grid>
 
-            <Grid Grid.Row="2">
-                <Border Background="LightGray" Padding="5" Margin="5" Stroke="LightGray" StrokeShape="RoundRectangle 5">
+            <Grid Grid.Row="1">
+                <Frame  Background="LightGray" Padding="5" Margin="5" >
                     <StackLayout Spacing="15">
                         <Button Text="Add Item" Clicked="AddNewItem_Clicked"/>
                         <Button Text="Delete Item" Clicked="DeleteButton_Clicked"/>
                         <Button Text="See All Items" Clicked="Button_Clicked"/>
-                        <Button Text="See All Categories"/>
-                        <Button Text="Back" Clicked="Button_Clicked_1"/>
+                        <Button Text="See All Categories" Clicked="ViewAllCategories_Clicked"/>
+                        <Button Text="Edit Item" Clicked="EditItem_Clicked"/>
                     </StackLayout>
-                </Border>
+                </Frame>
             </Grid>
 
         </Grid>

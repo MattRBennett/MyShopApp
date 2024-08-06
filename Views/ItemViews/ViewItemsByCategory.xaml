@@ -21,17 +21,21 @@
         
         <Grid Grid.Row="2" x:Name="Content" Margin="10">
             <ScrollView>
-                <CollectionView x:Name="ItemsCollectionView" HorizontalOptions="FillAndExpand">
+                <CollectionView x:Name="ItemsCollectionView">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame x:Name="ItemFrame" Margin="10, 15" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray" HorizontalOptions="Start">
+                            <Frame x:Name="ItemFrame" Margin="10, 15" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
                                 </Frame.GestureRecognizers>
-                                <StackLayout>
-                                    <Label Text="{Binding Name}" TextColor="Black"  FontSize="12"/>
-                                    <Label Text="{Binding Price}" TextColor="Black"  FontSize="12"/>
-                                </StackLayout>
+                                <Grid ColumnDefinitions="Auto, *" >
+                                    <Image Grid.Column="0" Source="{Binding Image}"/>
+                                    <Grid Grid.Column="1" RowDefinitions="*,*">
+                                        <Label Grid.Row="0" Text="{Binding Name}" TextColor="Black"  FontSize="12"/>
+                                        <Label Grid.Row="1" Text="{Binding Price}" TextColor="Black"  FontSize="12"/>
+                                    </Grid>
+                                    
+                                </Grid>
                             </Frame>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
@@ -41,10 +45,10 @@
         <Grid Grid.Row="2" x:Name="NothingFound">
             <Label Text="No results found..." VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
         </Grid>
-
-        <Grid Grid.Row="3" ColumnDefinitions="*,*" Margin="10 ,5,10,10" ColumnSpacing="10">
-            <Button Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+        <Button Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+        <!--<Grid ColumnDefinitions="*,*" Margin="10 ,5,10,10" ColumnSpacing="10">
+            
             <Button Grid.Column="1" Text="Add To Cart" CornerRadius="10"/>
-        </Grid>
+        </Grid>-->
     </Grid>
 </ContentPage>

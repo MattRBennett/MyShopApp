@@ -13,6 +13,9 @@ namespace MyShopApp.Interfaces
         Task<Item> GetItemByItemID(int ID);
         Task<List<ItemCategory>> GetItemCategories();
         Task<List<Item>> GetItemsByCategory(ItemCategory itemCategory);
-        Task AddNewItem(Item NewItem);
+        Task<ApiDataResponse<Item>> AddNewItem(Item NewItem);
+
+        Task<ApiDataResponse<Item>> UpdateItem(Item UpdatedItem);
+        Task<ApiDataResponse<Item>> DeleteItem(int ItemID);
     }
 }

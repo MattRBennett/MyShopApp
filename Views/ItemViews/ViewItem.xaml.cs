@@ -6,7 +6,8 @@ namespace MyShopApp.Views.ItemViews;
 public partial class ViewItem : ContentPage
 {
 	public int ItemID;
-   
+    Item item = new();
+
     public ViewItem(int SelectedItemID)
 	{
 		InitializeComponent();
@@ -18,8 +19,8 @@ public partial class ViewItem : ContentPage
     {
         base.OnAppearing();
 
-        Item item = new();
-        item = await item.GetItemItemID(ItemID);
+        
+        item = await item.GetItemByItemID(ItemID);
         if (item != null)
         {
             ItemName.Text = item.Name;
@@ -27,6 +28,9 @@ public partial class ViewItem : ContentPage
             ItemCategory.Text = item.ItemsCategory.ToString();
             ItemDescription.Text = item.Description;
 
+            ItemImage.Source = item.Image != null && item.Image.Length > 0
+    ? ImageSource.FromStream(() => new MemoryStream(item.Image))
+    : null;
         }
         else
         {
@@ -37,5 +41,17 @@ public partial class ViewItem : ContentPage
     private async void BackButton_Clicked(object sender, EventArgs e)
     {
         await Navigation.PopModalAsync();
+
+        //await Shell.Current.GoToAsync("..");
+    }
+
+    private async void EditButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new EditItem(ItemID));
+    }
+
+    private async void DeleteButton_Clicked(object sender, EventArgs e)
+    {
+        await DisplayAlert("Warning", "Are you sure you want to delete this item?", "Yes", "Cancel");
     }
 }
