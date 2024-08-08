@@ -23,7 +23,7 @@ public partial class LoginSignup : ContentPage
 			}
 			else
 			{
-				await DisplayAlert("Error", "Login failed! Please try again.", "Ok");
+				await DisplayAlert("Login failed", "Incorrect credentials, please try again.", "Ok");
 				return;
 			}
         }
@@ -59,7 +59,7 @@ public partial class LoginSignup : ContentPage
             }
             else
             {
-                await DisplayAlert("Error", "Login failed! Please try again.", "Ok");
+                await DisplayAlert("Signup Failed", "A user with that account already exists.", "Ok");
                 return;
             }
         }

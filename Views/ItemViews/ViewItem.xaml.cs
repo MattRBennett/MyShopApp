@@ -84,7 +84,7 @@ public partial class ViewItem : ContentPage
             ItemsCategory = item.ItemsCategory
         };
 
-        if (GetCartItems != null) 
+        if (GetCartItems.Data != null) 
         {
             List<Item> ItemList = new();
             ItemList.Add(items);
@@ -93,8 +93,6 @@ public partial class ViewItem : ContentPage
             {
                 ItemList.Add(item);
             }
-            //ItemList.AddRange(CurrentItems);
-            //var NewItems = JsonConvert.DeserializeObject<Item>(cartItem.CartItems);
             
             var FinalSerialization = JsonConvert.SerializeObject(ItemList);
 
@@ -105,8 +103,11 @@ public partial class ViewItem : ContentPage
             };
 
             await App.Service.AddNewCart(cart);
+            await DisplayAlert("Cart", "Item has been added to your cart!", "Ok");
+            await Navigation.PopModalAsync();
             return;
         }
+        else 
         {
             List<Item> ItemsList = new List<Item>();
             ItemsList.Add(items);
@@ -118,22 +119,11 @@ public partial class ViewItem : ContentPage
                 CartItems = SerializedItems
             };
             await App.Service.AddNewCart(cart);
+            await DisplayAlert("Cart", "Item has been added to your cart!", "Ok");
+            await Navigation.PopModalAsync();
             return;
         }
 
-
         
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        //var deserializedItems = System.Text.Json.JsonSerializer.Deserialize<List<Item>>(serializedItems);
     }
 }

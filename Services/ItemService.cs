@@ -11,10 +11,8 @@ namespace MyShopApp.Services
 {
     public class ItemService : IItemService
     {
-
         public List<Item> items { get; private set; }
         public List<ItemCategory> categories { get; private set; }
-
 
         readonly HttpClient client;
         readonly System.Text.Json.JsonSerializerOptions serializerOptions;
@@ -28,7 +26,6 @@ namespace MyShopApp.Services
                 WriteIndented = true
             };
         }
-
 
         public async Task<List<Item>> GetAllItems()
         {
@@ -115,7 +112,6 @@ namespace MyShopApp.Services
 
             return item;
         }
-
 
         public async Task<List<ItemCategory>> GetItemCategories()
         {
@@ -259,7 +255,7 @@ namespace MyShopApp.Services
 
                     apiDataResponse.Success = false;
                     apiDataResponse.Message = "Failed to update item. Status code: {response.StatusCode}";
-                    
+
                 }
             }
             catch (Exception ex)
@@ -293,7 +289,6 @@ namespace MyShopApp.Services
 
                     apiDataResponse.Success = false;
                     apiDataResponse.Message = "Failed to delete item. Status code: {response.StatusCode}";
-
                 }
             }
             catch (Exception ex)

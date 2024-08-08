@@ -136,8 +136,6 @@ namespace MyShopApp.Services
             }
 
             return apiDataResponse;
-
-            
         }
     }
 }

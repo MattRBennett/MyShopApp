@@ -76,7 +76,19 @@
                     </CollectionView>
                 </ScrollView>
             </Grid>
-            <Button FontAttributes="Bold" Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+
+            <Grid Grid.Row="2" x:Name="NothingFound">
+                <StackLayout VerticalOptions="Center" Spacing="10">
+                    <Image Source="sad.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFit"/>
+                    <Label Text="Your cart is empty..." VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="18"/>
+                </StackLayout>
+
+            </Grid>
+            <Grid Grid.Row="3" ColumnDefinitions="*,*" Margin="10" ColumnSpacing="10">
+                <Button FontAttributes="Bold" Grid.Column="0"   Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+                <Button x:Name="PurchaseButton" FontAttributes="Bold" Grid.Column="1"  Text="Purchase" CornerRadius="10" Clicked="PurchaseButton_Clicked"/>
+
+            </Grid>
         </Grid>
         <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">

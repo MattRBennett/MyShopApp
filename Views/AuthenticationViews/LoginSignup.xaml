@@ -4,7 +4,6 @@
              x:Class="MyShopApp.Views.AuthenticationViews.LoginSignup"
              Title="LoginSignup">
     <Grid RowDefinitions="Auto, *" Margin="10">
-        
 
         <Grid Grid.Row="1">
             <StackLayout VerticalOptions="Center" Spacing="10">
@@ -27,7 +26,6 @@
                     <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
                         <Button Grid.Column="0" Text="Signup" Clicked="SignupButton_Clicked" FontAttributes="Bold"/>
                         <Button Grid.Column="1" Text="Login" Clicked="LoginButton_Clicked" FontAttributes="Bold"/>
-                        
                     </Grid>
 
                     <Button Text="Continue without login" Clicked="ContinueButton_Clicked" FontAttributes="Bold"/>

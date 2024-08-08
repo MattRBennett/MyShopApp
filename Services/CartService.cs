@@ -168,6 +168,41 @@ namespace MyShopApp.Services
 
             return apiDataResponse;
         }
+
+        public async Task<ApiDataResponse<Cart>> RemoveCart(int UserID)
+        {
+            ApiDataResponse<Cart> apiDataResponse = new();
+
+            Uri uri = new(string.Format($"{Constants.apiURL}Cart/RemoveCart?UserID={UserID}"));
+
+
+
+            try
+            {
+                HttpResponseMessage response = await client.DeleteAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(@"Cart successfully deleted.");
+
+                    apiDataResponse.Success = true;
+                    apiDataResponse.Message = "Cart has been successfully deleted.";
+                }
+                else
+                {
+                    Debug.WriteLine($"Failed to delete cart. Status code: {response.StatusCode}");
+
+                    apiDataResponse.Success = false;
+                    apiDataResponse.Message = "Failed to delete cart. Status code: {response.StatusCode}";
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error while deleting cart: {ex.Message}");
+            }
+
+            return apiDataResponse;
+        }
     }
 }
 

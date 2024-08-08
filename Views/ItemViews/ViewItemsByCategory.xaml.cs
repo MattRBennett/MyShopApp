@@ -29,8 +29,13 @@ public partial class ViewItemsByCategory : ContentPage
     protected async override void OnAppearing()
     {
         base.OnAppearing();
-        
-        
+        LoadItems();
+        LoadingIndicatorStack.IsVisible = false;
+        Content.IsVisible = true;
+    }
+
+    public async void LoadItems()
+    {
         items.Clear();
 
         CategoryNameLabel.Text = ItemsCategory.CategoryName;
@@ -51,22 +56,19 @@ public partial class ViewItemsByCategory : ContentPage
                     Id = item.Id,
                     Name = item.Name,
                     ItemCategory = item.ItemsCategory,
-                    
+
                     Image = imageSource,
                     Price = $"£{item.Price}"
                 });
             }
-            //items.AddRange(GetItems);
+
             ItemsCollectionView.ItemsSource = items;
             Content.IsVisible = true;
         }
-		else
+        else
         {
             NothingFound.IsVisible = true;
         }
-
-        LoadingIndicatorStack.IsVisible = false;
-        Content.IsVisible = true;
     }
 
     private async void ItemFrame_Tapped(object sender, TappedEventArgs e)
@@ -85,5 +87,11 @@ public partial class ViewItemsByCategory : ContentPage
     private async void AddButton_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushModalAsync(new AddNewItem());
+    }
+
+    private void RefreshView_Refreshing(object sender, EventArgs e)
+    {
+        LoadItems();
+        Content.IsRefreshing = false;
     }
 }

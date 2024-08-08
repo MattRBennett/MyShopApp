@@ -27,7 +27,6 @@ namespace MyShopApp.Models
 
                 if (GetUserByID != null)
                 {
-
                     Preferences.Clear();
                     Preferences.Set("UsersID", GetUserByID.Data.Id);
                     Preferences.Set("Username", GetUserByID.Data.Username);
@@ -36,7 +35,6 @@ namespace MyShopApp.Models
             }
 
             return false;
-
         }
 
         public async Task<ApiDataResponse<UserDetails>> Register(string username, string password)
@@ -51,7 +49,6 @@ namespace MyShopApp.Models
 
             response = await App.Service.Register(username, password);
 
-
             if (response.Success)
             {
                 Preferences.Clear();
@@ -61,9 +58,5 @@ namespace MyShopApp.Models
 
             return response;
         }
-
-
     }
-
-
 }

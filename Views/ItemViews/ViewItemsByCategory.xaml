@@ -6,8 +6,8 @@
              BackgroundColor="LightGray">
     <Grid RowDefinitions="*">
 
-
-        <Grid Grid.Row="0" RowDefinitions="Auto, Auto, *, Auto" x:Name="Content">
+        <RefreshView  x:Name="Content" Grid.Row="0" Refreshing="RefreshView_Refreshing" RefreshColor="#2B0B98">
+            <Grid RowDefinitions="Auto, Auto, *, Auto" >
             <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
 
                 <Grid ColumnDefinitions="Auto, *, Auto">
@@ -54,7 +54,8 @@
             <Button FontAttributes="Bold" Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
             
         </Grid>
-        <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
+    </RefreshView>
+    <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
                 <ActivityIndicator Color="#2B0B98" IsRunning="True" WidthRequest="40"/>
                 <Label Text="Loading..." TextColor="#2B0B98" FontSize="14"/>
