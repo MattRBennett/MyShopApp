@@ -12,5 +12,6 @@ namespace MyShopApp.Interfaces
         Task<ApiDataResponse<Cart>> AddCart(Cart NewCart);
         Task<ApiDataResponse<Cart>> GetCartByUserID(int UserID);
         Task<ApiDataResponse<Cart>> AddNewCart(Cart NewCart);
+        Task<ApiDataResponse<Cart>> RemoveCartItem(int UserID, int ItemID);
     }
 }

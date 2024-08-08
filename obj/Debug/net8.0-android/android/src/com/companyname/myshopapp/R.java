@@ -11615,8 +11615,9 @@ public final class R {
     public static final int tooltip_frame_dark=0x7f0700f8;
     public static final int tooltip_frame_light=0x7f0700f9;
     public static final int toys=0x7f0700fa;
-    public static final int unassigned=0x7f0700fb;
-    public static final int user=0x7f0700fc;
+    public static final int trash=0x7f0700fb;
+    public static final int unassigned=0x7f0700fc;
+    public static final int user=0x7f0700fd;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

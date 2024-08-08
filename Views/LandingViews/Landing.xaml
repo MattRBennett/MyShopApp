@@ -12,7 +12,7 @@
                 <Grid ColumnDefinitions="Auto, *, Auto">
                     <ImageButton Grid.Column="0" x:Name="LogInOutButton" Scale="0.8" Clicked="LogInOutButton_Clicked"/>
                     <Label Grid.Column="1" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
-                    <ImageButton Grid.Column="2" Source="cart.png" Scale="0.8" Clicked="CartButton_Clicked"/>
+                    <ImageButton x:Name="CartButton" Grid.Column="2" Source="cart.png" Scale="0.8" Clicked="CartButton_Clicked"/>
                     
                 </Grid>
                
@@ -77,7 +77,7 @@
                             </StackLayout>
                         </Frame>
                         
-                        <Button Text="See All Items" FontAttributes="Bold" Clicked="Button_Clicked"/>
+                        <!--<Button Text="See All Items" FontAttributes="Bold" Clicked="Button_Clicked"/>-->
                         <Button Text="See All Categories" FontAttributes="Bold" Clicked="ViewAllCategories_Clicked"/>
 
                     </StackLayout>

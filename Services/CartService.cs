@@ -60,8 +60,6 @@ namespace MyShopApp.Services
 
             Uri uri = new(string.Format($"{Constants.apiURL}Cart/GetCartByUserID?UserID={UserID}"));
 
-            Cart cart;
-
             try
             {
                 HttpResponseMessage response = await client.GetAsync(uri);
@@ -74,7 +72,6 @@ namespace MyShopApp.Services
 
                     if (apiDataResponse != null)
                     {
-                        cart = apiDataResponse.Data;
                         apiDataResponse.Success = true;
                         apiDataResponse.Message = "Cart data returned successfully!";
                     }
@@ -100,34 +97,73 @@ namespace MyShopApp.Services
 
         }
 
-        public async Task<ApiDataResponse<Cart>> AddNewCart(Cart NewCart)
+        public async Task<ApiDataResponse<Cart>> AddNewCart(Cart NewCartItem)
         {
             ApiDataResponse<Cart> apiDataResponse = new();
 
-            Uri uri = new(string.Format($"{Constants.apiURL}Cart/AddNewCart"));
+            Uri uri = new(string.Format($"{Constants.apiURL}Cart/AddCartItem"));
+
+            var SerializedCart = System.Text.Json.JsonSerializer.Serialize(NewCartItem);
+
+            var content = new StringContent(SerializedCart, Encoding.UTF8, "application/json");
 
             try
             {
-                HttpResponseMessage response = await client.PostAsJsonAsync(uri, NewCart);
+                HttpResponseMessage response = await client.PostAsync(uri, content);
 
                 if (response.IsSuccessStatusCode)
                 {
                     Debug.WriteLine(@"New cart successfully saved.");
 
                     apiDataResponse.Success = true;
-                    apiDataResponse.Message = "Cart has been successfully added.";
+                    apiDataResponse.Message = "Cart items have been successfully added.";
                 }
                 else
                 {
                     Debug.WriteLine($"Failed to add new cart. Status code: {response.StatusCode}");
 
                     apiDataResponse.Success = false;
-                    apiDataResponse.Message = "Failed to add new cart. Status code: {response.StatusCode}";
+                    apiDataResponse.Message = "Failed to add new cart items. Status code: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error while adding new cart: {ex.Message}");
+            }
+
+            return apiDataResponse;
+        }
+
+        public async Task<ApiDataResponse<Cart>> RemoveCartItem(int UserID, int ItemID)
+        {
+            ApiDataResponse<Cart> apiDataResponse = new();
+
+            Uri uri = new(string.Format($"{Constants.apiURL}Cart/RemoveCartItem?UserID={UserID}&ItemID={ItemID}"));
+
+
+
+            try
+            {
+                HttpResponseMessage response = await client.DeleteAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(@"New cart successfully deleted.");
+
+                    apiDataResponse.Success = true;
+                    apiDataResponse.Message = "Item has been successfully deleted.";
+                }
+                else
+                {
+                    Debug.WriteLine($"Failed to delete item. Status code: {response.StatusCode}");
+
+                    apiDataResponse.Success = false;
+                    apiDataResponse.Message = "Failed to delete item. Status code: {response.StatusCode}";
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error while deleting item: {ex.Message}");
             }
 
             return apiDataResponse;

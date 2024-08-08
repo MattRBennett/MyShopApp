@@ -95,6 +95,11 @@ namespace MyShopApp.Services
             return cartServices.AddNewCart(NewCart);
         }
 
+        public Task<ApiDataResponse<Cart>> RemoveCartItem(int UserID, int ItemID)
+        {
+            return cartServices.RemoveCartItem(UserID, ItemID);
+        }
+
         #endregion
     }
 }

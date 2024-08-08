@@ -3,18 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.CartViews.ViewCart"
              Title="ViewCart">
-    <Grid>
-        <CollectionView x:Name="CartCollectionView">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout>
-                        <Label Text="{Binding Name}"/>
-                        <Label Text="{Binding Price}"/>
+    <Grid RowDefinitions="*">
 
-                        <Label Text="{Binding TotalPrice}"/>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+
+        <Grid Grid.Row="0" RowDefinitions="Auto, Auto, *, Auto" x:Name="Content">
+            <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
+
+
+                    <Label  HorizontalTextAlignment="Center" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+
+
+            </Frame>
+            <Grid Grid.Row="1" Margin="10">
+                <Label Text="Your Cart" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <ScrollView>
+                    <CollectionView x:Name="CartCollectionView">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <SwipeView >
+                                    <SwipeView.LeftItems>
+                                        <SwipeItems>
+
+                                            <SwipeItemView Invoked="SwipeItemView_Invoked" Padding="0" >
+                                                <Frame 
+                                                      Grid.Column="0"
+                                                      VerticalOptions="Fill"                   
+                                                      HorizontalOptions="Fill"
+                                                      WidthRequest="90"
+                                                      BackgroundColor="White"
+                                                      Margin="0,0,5,0"
+                                                      CornerRadius="10"
+                                                      Padding="0"
+                                                     BorderColor="LightGray"
+                                                      >
+                                                    <Grid VerticalOptions="Center" HorizontalOptions="Center" Padding="0" Margin="0" RowDefinitions="Auto,Auto">
+                                                        <Image Grid.Row="0" Source="trash.png" Margin="0,0,0,5" Scale="1" MaximumWidthRequest="30"/>
+                                                        <Label 
+                                                              Grid.Row="1"
+                                                              Text="Remove"
+                                                              FontSize="10"
+                                                              FontAttributes="Bold"
+                                                              TextColor="#FF0000"
+                                                              HorizontalOptions="CenterAndExpand"
+                                                              VerticalOptions="CenterAndExpand" />
+                                                    </Grid>
+                                                </Frame>
+                                            </SwipeItemView>
+
+
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>
+                                    <Frame x:Name="ItemFrame" Margin="5" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray">
+                                        <!--<Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
+                    </Frame.GestureRecognizers>-->
+                                        <Grid ColumnDefinitions="Auto, *" ColumnSpacing="10">
+                                            <Image Grid.Column="0" Source="{Binding Image}"  WidthRequest="50" HeightRequest="50" VerticalOptions="Center"/>
+                                            <Grid Grid.Column="1" RowDefinitions="*,*" RowSpacing="5" VerticalOptions="Center">
+                                                <Label Grid.Row="0" Text="{Binding Name}" TextColor="Black"  FontSize="16" FontAttributes="Bold"/>
+                                                <Label Grid.Row="1" Text="{Binding Price}" TextColor="Black"  FontSize="14"/>
+                                            </Grid>
+
+                                        </Grid>
+                                    </Frame>
+                                </SwipeView>
+                            
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+            </Grid>
+            <Button FontAttributes="Bold" Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+        </Grid>
+        <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+                <ActivityIndicator Color="#2B0B98" IsRunning="True" WidthRequest="40"/>
+                <Label Text="Loading..." TextColor="#2B0B98" FontSize="14"/>
+            </StackLayout>
+        </Grid>
     </Grid>
 </ContentPage>

@@ -19,6 +19,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\sad.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\settings.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\sports.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\toys.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\trash.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\unassigned.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\user.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png

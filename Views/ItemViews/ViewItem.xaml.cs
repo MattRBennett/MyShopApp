@@ -1,5 +1,7 @@
 using MyShopApp.Models;
 using MyShopApp.Services;
+using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace MyShopApp.Views.ItemViews;
 
@@ -70,35 +72,68 @@ public partial class ViewItem : ContentPage
 
     private async void AddItemToCart_Clicked(object sender, EventArgs e)
     {
-        //if (item != null)
-        //{
-        //    List<Item> newItems = new();
-        //    newItems.Add(item);
+        var GetCartItems = await App.Service.GetCartByUserID(UsersID);
 
-        //    Cart cart = new Cart 
-        //    { 
-        //        UserID = UsersID,
-        //        CartItems = newItems,
-        //        CartTotal = item.Price
-
-        //    };
-
-
-        //    await App.Service.AddCart(cart);
-        //}
-
-        var UserCart = await App.Service.GetCartByUserID(UsersID);
-
-        if (UserCart.Data == null)
+        Item items = new Item
         {
+            Id = item.Id,
+            Name = item.Name,
+            Description = item.Description,
+            Price = item.Price,
+            Image = item.Image,
+            ItemsCategory = item.ItemsCategory
+        };
+
+        if (GetCartItems != null) 
+        {
+            List<Item> ItemList = new();
+            ItemList.Add(items);
+            var CurrentItems = JsonConvert.DeserializeObject<List<Item>>(GetCartItems.Data.CartItems);
+           foreach (var item in CurrentItems)
+            {
+                ItemList.Add(item);
+            }
+            //ItemList.AddRange(CurrentItems);
+            //var NewItems = JsonConvert.DeserializeObject<Item>(cartItem.CartItems);
+            
+            var FinalSerialization = JsonConvert.SerializeObject(ItemList);
 
             Cart cart = new Cart
             {
                 UserID = UsersID,
-                CartTotal = 0
+                CartItems = FinalSerialization
             };
 
             await App.Service.AddNewCart(cart);
+            return;
         }
+        {
+            List<Item> ItemsList = new List<Item>();
+            ItemsList.Add(items);
+
+            string SerializedItems = System.Text.Json.JsonSerializer.Serialize(ItemsList);
+            Cart cart = new Cart
+            {
+                UserID = UsersID,
+                CartItems = SerializedItems
+            };
+            await App.Service.AddNewCart(cart);
+            return;
+        }
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        //var deserializedItems = System.Text.Json.JsonSerializer.Deserialize<List<Item>>(serializedItems);
     }
 }

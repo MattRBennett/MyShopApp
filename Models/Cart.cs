@@ -10,7 +10,6 @@ namespace MyShopApp.Models
     {
         public int CartID { get; set; }
         public int UserID { get; set; }
-        public List<Item> CartItems { get; set; } = new List<Item>();
-        public decimal CartTotal { get; set; } = decimal.Zero;
+        public string CartItems { get; set; } = string.Empty;
     }
 }
