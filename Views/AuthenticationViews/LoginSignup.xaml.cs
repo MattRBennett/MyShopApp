@@ -9,20 +9,63 @@ public partial class LoginSignup : ContentPage
 		InitializeComponent();
 	}
 
-    private async void Button_Clicked(object sender, EventArgs e)
+    private async void LoginButton_Clicked(object sender, EventArgs e)
     {
 		User user = new User();
 
 		if (UsernameEntry.Text != null && PasswordEntry.Text != null)
 		{
+			bool LoginAttempt = await user.Login(UsernameEntry.Text, PasswordEntry.Text);
 
-			//var login = await user.Login
-
-            var UserLogin = 
+			if (LoginAttempt)
+			{
+				await Navigation.PushModalAsync(new Landing());
+			}
+			else
+			{
+				await DisplayAlert("Error", "Login failed! Please try again.", "Ok");
+				return;
+			}
         }
 		else
 		{
 			return;
 		}
+    }
+
+    protected override bool OnBackButtonPressed()
+    {
+        return true;
+    }
+
+    private async void ContinueButton_Clicked(object sender, EventArgs e)
+    {
+		Preferences.Clear();
+		await Navigation.PushModalAsync(new Landing());
+    }
+
+    private async void SignupButton_Clicked(object sender, EventArgs e)
+    {
+        User user = new User();
+
+        if (UsernameEntry.Text != null && PasswordEntry.Text != null)
+        {
+            var response = await user.Register(UsernameEntry.Text, PasswordEntry.Text);
+
+            if (response.Success)
+            {
+
+                await Navigation.PushModalAsync(new Landing());
+            }
+            else
+            {
+                await DisplayAlert("Error", "Login failed! Please try again.", "Ok");
+                return;
+            }
+        }
+        else
+        {
+            return;
+        }
     }
 }

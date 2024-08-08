@@ -11,7 +11,7 @@ namespace MyShopApp.Models
         public string Username { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
 
-        public async Task<ApiDataResponse<int>> Login(string username, string password)
+        public async Task<bool> Login(string username, string password)
         {
             User user = new User
             {
@@ -21,17 +21,49 @@ namespace MyShopApp.Models
 
             var UserID = await App.Service.Login(username, password);
 
-
-            if (UserCredentials != null)
+            if (UserID != null && UserID.Success == true)
             {
-                var GetUserByID = await 
+                var GetUserByID = await App.Service.GetUserDetailsByID(UserID.Data);
+
+                if (GetUserByID != null)
+                {
+
+                    Preferences.Clear();
+                    Preferences.Set("UsersID", GetUserByID.Data.Id);
+                    Preferences.Set("Username", GetUserByID.Data.Username);
+                    return true;
+                }
             }
 
-            return UserLogin;
+            return false;
+
+        }
+
+        public async Task<ApiDataResponse<UserDetails>> Register(string username, string password)
+        {
+            var response = new ApiDataResponse<UserDetails>();
+
+            User user = new User
+            {
+                Username = username,
+                Password = password
+            };
+
+            response = await App.Service.Register(username, password);
+
+
+            if (response.Success)
+            {
+                Preferences.Clear();
+                Preferences.Set("UsersID", response.Data.Id);
+                Preferences.Set("Username", response.Data.Username);
+            }
+
+            return response;
         }
 
 
     }
 
-    
+
 }

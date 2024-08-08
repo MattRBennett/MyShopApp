@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\interfaces\\icartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:interfaces\\icartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewallcategories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\viewallcategories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\models\\apidataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:models\\apidataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\authenticationviews\\loginsignup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\authenticationviews\\loginsignup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\authenticationviews\\loginsignup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +43,40 @@
       "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\authenticationviews\\loginsignup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\authenticationviews\\loginsignup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewallitems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\viewallitems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\addnewitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\addnewitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewallitems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\viewallitems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\landingviews\\landing.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\landingviews\\landing.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\viewitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\itemviews\\viewitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\landingviews\\landing.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|solutionrelative:views\\landingviews\\landing.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{157C5DB9-2CC2-46D0-89D0-AF3386641F0B}|MyShopApp.csproj|c:\\users\\matthew-lt\\documents\\github\\myshopapp\\views\\itemviews\\viewitemsbycategory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,180 +110,256 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "ICartServices.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\ICartServices.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICartServices.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\ICartServices.cs",
+              "RelativeToolTip": "Interfaces\\ICartServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T20:05:01.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Cart.cs",
+              "RelativeToolTip": "Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T20:01:14.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\CartService.cs",
+              "RelativeToolTip": "Services\\CartService.cs",
+              "ViewState": "AQIAAFoAAAAAoJmZmZkrwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T19:25:11.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewAllCategories.xaml",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllCategories.xaml",
+              "RelativeDocumentMoniker": "Views\\ItemViews\\ViewAllCategories.xaml",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllCategories.xaml",
+              "RelativeToolTip": "Views\\ItemViews\\ViewAllCategories.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T19:22:30.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ItemService.cs",
               "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ItemService.cs",
               "RelativeDocumentMoniker": "Services\\ItemService.cs",
               "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ItemService.cs",
               "RelativeToolTip": "Services\\ItemService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAApAAAA",
+              "ViewState": "AQIAAMcAAAAA0P////8HwOEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T14:00:59.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "Models\\Item.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Item.cs",
-              "RelativeToolTip": "Models\\Item.cs",
-              "ViewState": "AQIAAAAAAACAz8zMzAwswBMAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:50:20.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T18:50:52.445Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginSignup.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AuthenticationViews\\LoginSignup.xaml.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml.cs",
-              "RelativeToolTip": "Views\\AuthenticationViews\\LoginSignup.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:48:49.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:48:17.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\MainPage.xaml.cs",
-              "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:48:12.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginSignup.xaml",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml",
-              "RelativeDocumentMoniker": "Views\\AuthenticationViews\\LoginSignup.xaml",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml",
-              "RelativeToolTip": "Views\\AuthenticationViews\\LoginSignup.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T13:44:44.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IItemService.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IItemService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IItemService.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IItemService.cs",
-              "RelativeToolTip": "Interfaces\\IItemService.cs",
+              "Title": "ApiDataResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\ApiDataResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ApiDataResponse.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\ApiDataResponse.cs",
+              "RelativeToolTip": "Models\\ApiDataResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:34:26.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IAuthenticationService.cs",
-              "RelativeToolTip": "Interfaces\\IAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:23:20.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T18:50:43.446Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ServiceManager.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ServiceManager.cs",
-              "RelativeDocumentMoniker": "Services\\ServiceManager.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ServiceManager.cs",
-              "RelativeToolTip": "Services\\ServiceManager.cs",
-              "ViewState": "AQIAADAAAABAZ2ZmZiYnwEMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:26:56.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAUAAACAZWZmZmYkwBoAAAAoAAAA",
+              "ViewState": "AQIAABoAAAA4yMzMzMwqwCMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:23:34.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T15:53:14.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "LoginSignup.xaml",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml",
+              "RelativeDocumentMoniker": "Views\\AuthenticationViews\\LoginSignup.xaml",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml",
+              "RelativeToolTip": "Views\\AuthenticationViews\\LoginSignup.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T15:51:39.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginSignup.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AuthenticationViews\\LoginSignup.xaml.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\AuthenticationViews\\LoginSignup.xaml.cs",
+              "RelativeToolTip": "Views\\AuthenticationViews\\LoginSignup.xaml.cs",
+              "ViewState": "AQIAACYAAABAb5mZmZkHwCgAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:51:37.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceManager.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ServiceManager.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceManager.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\ServiceManager.cs",
+              "RelativeToolTip": "Services\\ServiceManager.cs",
+              "ViewState": "AQIAAEEAAACA/v////8rwFwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:49:56.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "Services\\AuthenticationService.cs",
               "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Services\\AuthenticationService.cs",
               "RelativeToolTip": "Services\\AuthenticationService.cs",
-              "ViewState": "AQIAADAAAAAABgAAAAAIwDcAAAAuAAAA",
+              "ViewState": "AQIAAFMAAAAAuczMzMwNwEkAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T13:22:56.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T15:47:07.891Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "AddNewItem.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\AddNewItem.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ItemViews\\AddNewItem.xaml.cs",
-              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\AddNewItem.xaml.cs",
-              "RelativeToolTip": "Views\\ItemViews\\AddNewItem.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDcAAAALAAAA",
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T18:06:50.96Z"
+              "WhenOpened": "2024-08-07T15:46:33.236Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Models\\Item.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Models\\Item.cs",
+              "RelativeToolTip": "Models\\Item.cs",
+              "ViewState": "AQIAAA0AAAAAMTMzMzMtwBgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:34:23.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewAllItems.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllItems.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ItemViews\\ViewAllItems.xaml.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllItems.xaml.cs",
+              "RelativeToolTip": "Views\\ItemViews\\ViewAllItems.xaml.cs",
+              "ViewState": "AQIAABAAAACg/f////83wBgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:33:19.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ViewAllItems.xaml",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllItems.xaml",
+              "RelativeDocumentMoniker": "Views\\ItemViews\\ViewAllItems.xaml",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewAllItems.xaml",
+              "RelativeToolTip": "Views\\ItemViews\\ViewAllItems.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwCYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T15:32:23.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Landing.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\LandingViews\\Landing.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LandingViews\\Landing.xaml.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\LandingViews\\Landing.xaml.cs",
+              "RelativeToolTip": "Views\\LandingViews\\Landing.xaml.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAmwHgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:29:52.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewItem.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItem.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ItemViews\\ViewItem.xaml.cs",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItem.xaml.cs",
+              "RelativeToolTip": "Views\\ItemViews\\ViewItem.xaml.cs",
+              "ViewState": "AQIAAEEAAAAAoJmZmZn7v2QAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T15:16:49.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ViewItem.xaml",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItem.xaml",
+              "RelativeDocumentMoniker": "Views\\ItemViews\\ViewItem.xaml",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItem.xaml",
+              "RelativeToolTip": "Views\\ItemViews\\ViewItem.xaml",
+              "ViewState": "AQIAAAsAAAAAKTMzMzMLwA8AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T15:16:47.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Landing.xaml",
+              "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\LandingViews\\Landing.xaml",
+              "RelativeDocumentMoniker": "Views\\LandingViews\\Landing.xaml",
+              "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\LandingViews\\Landing.xaml",
+              "RelativeToolTip": "Views\\LandingViews\\Landing.xaml",
+              "ViewState": "AQIAAA4AAACAl5mZmdkhwCEAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T15:15:01.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "ViewItemsByCategory.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItemsByCategory.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ItemViews\\ViewItemsByCategory.xaml.cs",
               "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItemsByCategory.xaml.cs",
               "RelativeToolTip": "Views\\ItemViews\\ViewItemsByCategory.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowBUAAAAAAAAA",
+              "ViewState": "AQIAABkAAABABAAAAAAuwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T18:03:39.737Z"
+              "WhenOpened": "2024-08-07T15:10:55.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "ViewItemsByCategory.xaml",
               "DocumentMoniker": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItemsByCategory.xaml",
               "RelativeDocumentMoniker": "Views\\ItemViews\\ViewItemsByCategory.xaml",
               "ToolTip": "C:\\Users\\Matthew-LT\\Documents\\GitHub\\MyShopApp\\Views\\ItemViews\\ViewItemsByCategory.xaml",
               "RelativeToolTip": "Views\\ItemViews\\ViewItemsByCategory.xaml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAABRAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-05T18:03:37.971Z"
+              "WhenOpened": "2024-08-07T15:10:44.847Z"
             }
           ]
         }

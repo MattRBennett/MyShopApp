@@ -10,16 +10,16 @@ using System.Threading.Tasks;
 namespace MyShopApp.Services
 {
     public class ServiceManager
-    {
-
-        
+    {       
         readonly IItemService itemServices;
         readonly IAuthenticationService authenticationServices;
+        readonly ICartServices cartServices;
 
-        public ServiceManager(IItemService itemService, IAuthenticationService authenticationService)
+        public ServiceManager(IItemService itemService, IAuthenticationService authenticationService, ICartServices cartService)
         {
             itemServices = itemService;
             authenticationServices = authenticationService;
+            cartServices = cartService;
         }
 
         #region ItemService
@@ -62,11 +62,37 @@ namespace MyShopApp.Services
 
         #region AuthenticationService
 
-        
-
         public Task<ApiDataResponse<int>> Login(string username, string password)
         {
             return authenticationServices.Login(username, password);
+        }
+
+        public Task<ApiDataResponse<UserDetails>> GetUserDetailsByID(int ID)
+        {
+            return authenticationServices.GetUserDetailsByID(ID);
+        }
+
+        public Task<ApiDataResponse<UserDetails>> Register(string username, string password)
+        {
+            return authenticationServices.Register(username, password);
+        }
+
+        #endregion
+
+        #region CartService
+
+        public Task<ApiDataResponse<Cart>> AddCart(Cart NewCart)
+        {
+            return cartServices.AddCart(NewCart);
+        }
+        public Task<ApiDataResponse<Cart>> GetCartByUserID(int UserID)
+        {
+            return cartServices.GetCartByUserID(UserID);
+        }
+
+        public Task<ApiDataResponse<Cart>> AddNewCart(Cart NewCart)
+        {
+            return cartServices.AddNewCart(NewCart);
         }
 
         #endregion

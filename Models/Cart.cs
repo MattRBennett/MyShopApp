@@ -8,8 +8,9 @@ namespace MyShopApp.Models
 {
     public class Cart
     {
-        public int ItemID { get; set; }
-        public string ItemName { get; set; } = string.Empty;
-        public decimal ItemPrice { get; set; } = decimal.Zero;
+        public int CartID { get; set; }
+        public int UserID { get; set; }
+        public List<Item> CartItems { get; set; } = new List<Item>();
+        public decimal CartTotal { get; set; } = decimal.Zero;
     }
 }

@@ -6,13 +6,8 @@
              BackgroundColor="LightGray">
     <Grid RowDefinitions="Auto, *, Auto">
         <Grid Grid.Row="0">
-            <Frame CornerRadius="0">
-                <Grid ColumnDefinitions="Auto, *, Auto">
-                    <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
-                    <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
-                    <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
-                </Grid>
-
+            <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
             </Frame>
         </Grid>
         <Grid Grid.Row="1" Margin="10">
@@ -26,14 +21,18 @@
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Frame BackgroundColor="White" BorderColor="White" HasShadow="True">
+                                <Frame x:Name="ItemFrame" Margin="5" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray">
                                     <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="ItemTapped"/>
+                                        <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
                                     </Frame.GestureRecognizers>
-                                    <StackLayout>
-                                        <Label Text="{Binding Name}" TextColor="Black"/>
-                                        <Label Text="{Binding Price}" TextColor="Black"/>
-                                    </StackLayout>
+                                    <Grid ColumnDefinitions="Auto, *" ColumnSpacing="10">
+                                        <Image Grid.Column="0" Source="{Binding Image}"  WidthRequest="50" HeightRequest="50" VerticalOptions="Center"/>
+                                        <Grid Grid.Column="1" RowDefinitions="*,*" RowSpacing="5" VerticalOptions="Center">
+                                            <Label Grid.Row="0" Text="{Binding Name}" TextColor="Black"  FontSize="14" FontAttributes="Bold"/>
+                                            <Label Grid.Row="1" Text="{Binding Price}" TextColor="Black"  FontSize="12"/>
+                                        </Grid>
+
+                                    </Grid>
                                 </Frame>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>

@@ -7,16 +7,17 @@
              >
 
     <Grid RowDefinitions="*">
-        <Grid RowDefinitions="Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
-            <!--<Frame CornerRadius="0" Grid.Row="0">
+        <Grid RowDefinitions="Auto, Auto, *" RowSpacing="10" Grid.Row="0" x:Name="Content">
+            <Frame CornerRadius="0" Grid.Row="0" HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
                 <Grid ColumnDefinitions="Auto, *, Auto">
-                    <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
-                    <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
-                    <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
+                    <ImageButton Grid.Column="0" x:Name="LogInOutButton" Scale="0.8" Clicked="LogInOutButton_Clicked"/>
+                    <Label Grid.Column="1" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                    <ImageButton Grid.Column="2" Source="cart.png" Scale="0.8" Clicked="CartButton_Clicked"/>
+                    
                 </Grid>
                
-            </Frame>-->
-            <Grid Grid.Row="0" Padding="5">
+            </Frame>
+            <Grid Grid.Row="1" Padding="5">
                 <StackLayout>
                     <Border Padding="0" Margin="0" BackgroundColor="White" Stroke="Black" StrokeShape="RoundRectangle 25">
                         <SearchBar TextChanged="SearchBar_TextChanged" x:Name="ItemSearchBar" Placeholder="Search..." BackgroundColor="Transparent" TextColor="Black" PlaceholderColor="DarkGray" CancelButtonColor="Black"/>
@@ -65,24 +66,30 @@
                 </StackLayout>
             </Grid>
 
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="2">
                 <Frame  Background="LightGray" Padding="5" Margin="5" >
                     <StackLayout Spacing="15">
-                        <Button Text="Add Item" Clicked="AddNewItem_Clicked"/>
-                        <Button Text="Delete Item" Clicked="DeleteButton_Clicked"/>
-                        <Button Text="See All Items" Clicked="Button_Clicked"/>
-                        <Button Text="See All Categories" Clicked="ViewAllCategories_Clicked"/>
-                        <Button Text="Edit Item" Clicked="EditItem_Clicked"/>
+                        <Frame BackgroundColor="#9880e5" x:Name="SignupBanner">
+                            <StackLayout Spacing="10">
+                                <Label Text="You're not signed up :(" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalOptions="Center"/>
+                                <Label Text="Click below to become a member of MyShopApp and gain access to cool features!" FontSize="14" TextColor="White"/>
+                                <Button x:Name="NotSignedupButton" Clicked="NotSignedupButton_Clicked" Text="Become a member" BackgroundColor="White" TextColor="#9880e5" FontAttributes="Bold" FontSize="18"/>
+                            </StackLayout>
+                        </Frame>
+                        
+                        <Button Text="See All Items" FontAttributes="Bold" Clicked="Button_Clicked"/>
+                        <Button Text="See All Categories" FontAttributes="Bold" Clicked="ViewAllCategories_Clicked"/>
+
                     </StackLayout>
                 </Frame>
             </Grid>
 
         </Grid>
-        <!--<Grid Grid.Row="1" x:Name="LoadingIndicatorStack">
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <ActivityIndicator/>
-                <Label Text="Loading..."/>
+        <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+                <ActivityIndicator Color="#2B0B98" IsRunning="True" WidthRequest="40"/>
+                <Label Text="Loading..." TextColor="#2B0B98" FontSize="14"/>
             </StackLayout>
-        </Grid>-->
+        </Grid>
     </Grid>
 </ContentPage>

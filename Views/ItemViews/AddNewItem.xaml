@@ -6,8 +6,8 @@
              BackgroundColor="LightGray">
     <Grid RowDefinitions="Auto, *, Auto">
         <Grid Grid.Row="0">
-            <Frame CornerRadius="0">
-                <Label Text="MyShopApp"/>
+            <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
             </Frame>
         </Grid>
         <Grid Grid.Row="1">
@@ -38,32 +38,11 @@
                             </StackLayout>
 
                             <StackLayout>
-                                <!--<SwipeView >
-                                    <SwipeView.LeftItems>
-                                        <SwipeItems>
-                                            <SwipeItemView Invoked="RemoveImage_Invoked">
-                                                <Frame Grid.Column="0" VerticalOptions="Fill" HorizontalOptions="Fill" WidthRequest="85" BackgroundColor="Salmon" Margin="0,0,5,0">
-                                                    <Grid VerticalOptions="Center" HorizontalOptions="Center" RowDefinitions="Auto,Auto">
-                                                        <Image Grid.Row="0" Source="lighttrash.png" Margin="0,0,0,5"/>
-                                                        <Label Grid.Row="1" Text="Delete" FontSize="12" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-                                                    </Grid>
-                                                </Frame>
-                                            </SwipeItemView>
-                                        </SwipeItems>
-                                    </SwipeView.LeftItems>-->
-                               
-                                <!--</SwipeView>-->
-
                                 <Grid x:Name="ImageStack" RowDefinitions="*, Auto" RowSpacing="5" Margin="0,0,0,10">
                                     <Image Grid.Row="0" x:Name="ChosenImage"  VerticalOptions="CenterAndExpand" MaximumWidthRequest="300" Aspect="AspectFit"/>
-                                    <!--<Label x:Name="ImageName" Grid.Column="0"/>-->
-                                    <!--<ImageButton Clicked="ImageButton_Clicked" Grid.Column="1" Source="cross.png"/>-->
-                                    <Button Grid.Row="1" Text="Remove Image" BackgroundColor="Salmon" Clicked="RemoveButton_Clicked"/>
+                                    <Button FontAttributes="Bold" Grid.Row="1" Text="Remove Image" BackgroundColor="Salmon" Clicked="RemoveButton_Clicked"/>
                                 </Grid>
-
-                               
-                                <Button x:Name="AddImageButton" Text="Add Image" Clicked="AddImageButton_Clicked"/>
-
+                                <Button VerticalOptions="End" FontAttributes="Bold" x:Name="AddImageButton" Text="Add Image" Clicked="AddImageButton_Clicked"/>
                             </StackLayout>
 
                         </StackLayout>
@@ -72,8 +51,8 @@
             </ScrollView>
         </Grid>
         <Grid Grid.Row="2" ColumnDefinitions="*,*" ColumnSpacing="10" Margin="10">
-            <Button Grid.Column="0" Clicked="BackButton_Clicked" Text="Back"/>
-            <Button Grid.Column="1" Clicked="AddButton_Clicked" Text="Add"/>
+            <Button Grid.Column="0" FontAttributes="Bold" Clicked="BackButton_Clicked" Text="Back"/>
+            <Button Grid.Column="1" FontAttributes="Bold" Clicked="AddButton_Clicked" Text="Add"/>
         </Grid>
     </Grid>
 </ContentPage>

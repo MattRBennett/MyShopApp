@@ -4,41 +4,38 @@
              x:Class="MyShopApp.Views.ItemViews.ViewItem"
              Title="ViewItem"
              BackgroundColor="White">
-    <Grid RowDefinitions="Auto, *, Auto, Auto">
+    <Grid RowDefinitions="Auto, *, Auto">
         <Grid Grid.Row="0">
-            <Frame CornerRadius="0">
-                <Label Text="MyShopApp"/>
+            <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
             </Frame>
         </Grid>
         <Grid Grid.Row="1">
             <ScrollView>
                 <StackLayout>
                     <Frame Margin="10" BackgroundColor="LightGray" BorderColor="LightGray" CornerRadius="10">
-                        <StackLayout Spacing="15">
+                        <StackLayout Spacing="10">
                             <Label x:Name="ItemName" FontSize="22" FontAttributes="Bold"/>
-                            <Image x:Name="ItemImage" Aspect="AspectFit"/>
-                            <Label x:Name="ItemCategory"/>
+                            <Label x:Name="ItemPrice" FontAttributes="Bold" HorizontalOptions="Start" FontSize="18"/>
+                            <Image x:Name="ItemImage" Aspect="AspectFit" MaximumHeightRequest="300"/>
+                            
+                            
                             <Label x:Name="ItemDescription"/>
-                            <Label x:Name="ItemPrice"/>
+                            <Label x:Name="ItemCategory" TextColor="DarkBlue" FontSize="14" FontAttributes="Italic"/>
                         </StackLayout>
-
                     </Frame>
-                    
-                    
                 </StackLayout>
-                
             </ScrollView>
         </Grid>
-        <Grid Grid.Row="2">
-            <StackLayout Spacing="5" Margin="10">
-                <Button Text="Edit"  Clicked="EditButton_Clicked"/>
-                <Button Text="Delete"  Clicked="DeleteButton_Clicked"/>
-            </StackLayout>
+        <Grid RowDefinitions="Auto,Auto" Grid.Row="2" Margin="10">
+            <Grid Grid.Row="0" ColumnDefinitions="*,*" ColumnSpacing="10" Margin="5" x:Name="AdminControls">
+                <Button Grid.Column="0" Text="Edit" x:Name="EditButton" Clicked="EditButton_Clicked"/>
+                <Button Grid.Column="1" Text="Delete" x:Name="DeleteButton" Clicked="DeleteButton_Clicked"/>
+            </Grid>
+            <Grid Grid.Row="1" ColumnDefinitions="*,*" ColumnSpacing="10" Margin="5">
+                <Button  Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
+                <Button Grid.Column="1" x:Name="AddItemToCart" Clicked="AddItemToCart_Clicked" Text="Add To Cart" CornerRadius="10"/>
+            </Grid>
         </Grid>
-        <Grid Grid.Row="3" ColumnDefinitions="*,*" Margin="10" ColumnSpacing="10">
-            <Button Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
-            <Button Grid.Column="1" Text="Add To Cart" CornerRadius="10"/>
-        </Grid>
-        
     </Grid>
 </ContentPage>

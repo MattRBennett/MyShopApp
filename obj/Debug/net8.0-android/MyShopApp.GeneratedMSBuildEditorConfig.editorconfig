@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.Authentica
 build_metadata.AdditionalFiles.TargetPath = Views\AuthenticationViews\LoginSignup.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AuthenticationViews\LoginSignup.xaml
 
+[C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/CartViews/ViewCart.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.CartViews.ViewCart.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CartViews\ViewCart.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CartViews\ViewCart.xaml
+
 [C:/Users/Matthew-LT/Documents/GitHub/MyShopApp/Views/ItemViews/AddNewItem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyShopApp.Views.ItemViews.AddNewItem.xaml

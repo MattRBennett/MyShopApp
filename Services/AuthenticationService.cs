@@ -32,6 +32,10 @@ namespace MyShopApp.Services
             {
                 HttpResponseMessage response = await client.PostAsJsonAsync(uri, credentials);
 
+                string content = await response.Content.ReadAsStringAsync();
+
+                apiDataResponse = JsonConvert.DeserializeObject<ApiDataResponse<int>>(content);
+
                 if (response.IsSuccessStatusCode)
                 {
                     apiDataResponse.Success = true;
@@ -53,11 +57,11 @@ namespace MyShopApp.Services
             return apiDataResponse;
         }
 
-        public async Task<ApiDataResponse<User>> GetUserDetailsByID(int ID)
+        public async Task<ApiDataResponse<UserDetails>> Register(string username, string password)
         {
-            ApiDataResponse<int> apiDataResponse = new();
+            ApiDataResponse<UserDetails> apiDataResponse = new();
 
-            Uri uri = new(string.Format($"{Constants.apiURL}Auth/Login"));
+            Uri uri = new(string.Format($"{Constants.apiURL}Auth/Register"));
 
             User credentials = new User { Username = username, Password = password };
 
@@ -65,10 +69,14 @@ namespace MyShopApp.Services
             {
                 HttpResponseMessage response = await client.PostAsJsonAsync(uri, credentials);
 
+                string content = await response.Content.ReadAsStringAsync();
+
+                apiDataResponse = JsonConvert.DeserializeObject<ApiDataResponse<UserDetails>>(content);
+
                 if (response.IsSuccessStatusCode)
                 {
                     apiDataResponse.Success = true;
-                    apiDataResponse.Message = "User has logged in successfully!";
+                    apiDataResponse.Message = "User has registered in successfully!";
                 }
                 else
                 {
@@ -84,6 +92,52 @@ namespace MyShopApp.Services
             }
 
             return apiDataResponse;
+        }
+
+        public async Task<ApiDataResponse<UserDetails>> GetUserDetailsByID(int ID)
+        {
+            ApiDataResponse<UserDetails> apiDataResponse = new();
+
+            Uri uri = new(string.Format($"{Constants.apiURL}User/GetUserDetailsByID?UsersID={ID}"));
+
+            UserDetails userDetails;
+
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+
+                    apiDataResponse = JsonConvert.DeserializeObject<ApiDataResponse<UserDetails>>(content);
+
+                    if (apiDataResponse != null)
+                    {
+                        userDetails = apiDataResponse.Data;
+                        apiDataResponse.Success = true;
+                        apiDataResponse.Message = "User data returned successfully!";
+                    }
+                    else
+                    {
+                        apiDataResponse.Success = false;
+                        apiDataResponse.Message = "Failed to return user data!";
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Error {response.StatusCode} : {response.RequestMessage}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
+            return apiDataResponse;
+
+            
         }
     }
 }

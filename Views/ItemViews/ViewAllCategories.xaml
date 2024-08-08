@@ -9,22 +9,21 @@
             <Label Text="Pick a category..." TextColor="Black" FontAttributes="Bold" FontSize="20"/>
         </Grid>
         <Grid Grid.Row="1">
-            <ScrollView>
+            <ScrollView Margin="0,10">
                 <CollectionView  x:Name="CategoriesCollectionView" >
                     <CollectionView.ItemsLayout>
-                        <GridItemsLayout Orientation="Vertical"
-                Span="2"
-                VerticalItemSpacing="10"
-                HorizontalItemSpacing="10" />
+                        <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="10" HorizontalItemSpacing="10" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame VerticalOptions="Center" BackgroundColor="#9880e5" BorderColor="LightGray" CornerRadius="10" Margin="0" Padding="0">
+                            <Frame VerticalOptions="Center" BackgroundColor="#9880e5" BorderColor="LightGray" CornerRadius="10" Margin="0" Padding="10">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="Category_Tapped"/>
                                 </Frame.GestureRecognizers>
-                                <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
-                                    <Image Source="{Binding Image}" Scale="0.4" Aspect="AspectFit" HorizontalOptions="Center" Margin="0"/>
+                                <StackLayout VerticalOptions="CenterAndExpand" Padding="5" Spacing="5">
+                                    <Border WidthRequest="50" HeightRequest="50" Margin="0" Padding="10" BackgroundColor="White" Stroke="White" StrokeShape="RoundRectangle 30">
+                                        <Image Source="{Binding Image}" Aspect="AspectFit" HorizontalOptions="Center" Margin="0"/>
+                                    </Border>
                                     <Label FontAttributes="Bold" TextColor="White" Text="{Binding CategoryName}" HorizontalOptions="Center" VerticalOptions="Start"/>
                                 </StackLayout>
                             </Frame>

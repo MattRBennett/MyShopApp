@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyShopApp.Views.AuthenticationViews.LoginSignup"
              Title="LoginSignup">
-    <Grid RowDefinitions="Auto, *">
-        <Grid Grid.Row="0">
-            <Label Text="Login"/> 
-        </Grid>
+    <Grid RowDefinitions="Auto, *" Margin="10">
+        
 
         <Grid Grid.Row="1">
             <StackLayout VerticalOptions="Center" Spacing="10">
-
+                <StackLayout>
+                    <Grid Grid.Row="0">
+                        <Label Text="Login/Signup" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </StackLayout>
                 <StackLayout>
                     <Label Text="Username"/>
                     <Entry x:Name="UsernameEntry" />
@@ -18,12 +20,17 @@
 
                 <StackLayout>
                     <Label Text="Password"/>
-                    <Entry x:Name="PasswordEntry"/>
+                    <Entry x:Name="PasswordEntry" IsPassword="True"/>
                 </StackLayout>
 
-                <StackLayout>
-                    <Button Text="Continue"/>
-                    <Button Text="Submit" Clicked="Button_Clicked"/>
+                <StackLayout Spacing="10">
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                        <Button Grid.Column="0" Text="Signup" Clicked="SignupButton_Clicked" FontAttributes="Bold"/>
+                        <Button Grid.Column="1" Text="Login" Clicked="LoginButton_Clicked" FontAttributes="Bold"/>
+                        
+                    </Grid>
+
+                    <Button Text="Continue without login" Clicked="ContinueButton_Clicked" FontAttributes="Bold"/>
                 </StackLayout>
 
             </StackLayout>

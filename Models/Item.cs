@@ -23,8 +23,9 @@ namespace MyShopApp.Models
         {
             List<Item> items = new();
             var itemsindb = await App.Service.GetAllItems();
-            items.AddRange(itemsindb);
-            return items;
+            //items.AddRange(itemsindb);
+            
+            return itemsindb;
         }
 
         public async Task<Item> GetItemByItemID(int ID)

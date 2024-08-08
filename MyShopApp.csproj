@@ -83,6 +83,9 @@
 	  <MauiXaml Update="Views\AuthenticationViews\LoginSignup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CartViews\ViewCart.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ItemViews\AddNewItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

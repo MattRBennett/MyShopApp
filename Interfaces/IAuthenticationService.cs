@@ -10,5 +10,7 @@ namespace MyShopApp.Interfaces
     public interface IAuthenticationService
     {
         Task<ApiDataResponse<int>> Login(string username, string password);
+        Task<ApiDataResponse<UserDetails>> GetUserDetailsByID(int ID);
+        Task<ApiDataResponse<UserDetails>> Register(string username, string password);
     }
 }

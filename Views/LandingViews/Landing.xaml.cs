@@ -1,4 +1,6 @@
 using MyShopApp.Models;
+using MyShopApp.Views.AuthenticationViews;
+using MyShopApp.Views.CartViews;
 using MyShopApp.Views.ItemViews;
 
 namespace MyShopApp.Views;
@@ -7,11 +9,13 @@ public partial class Landing : ContentPage
 {
     List<Item> items = new();
     List<CategoryList> categories = new();
+    public int UsersID = 0;
     public Landing()
     {
         InitializeComponent();
-        //Content.IsVisible = false;
-        //LoadingIndicatorStack.IsVisible = true;
+
+        Content.IsVisible = false;
+        LoadingIndicatorStack.IsVisible = true;
         SearchResultsListView.IsVisible = false;
 
     }
@@ -28,10 +32,31 @@ public partial class Landing : ContentPage
         categories.AddRange(fetchedcategories);
         CategoriesCollectionView.ItemsSource = categories;
 
+        UsersID = Preferences.Get("UsersID", 0);
+
+        if (UsersID > 0)
+        {
+            //logout
+            LogInOutButton.Source = ImageSource.FromFile("logout.png");
+            SignupBanner.IsVisible = false;
+        }
+        else if (UsersID == 0)
+        {
+            //login
+            LogInOutButton.Source = ImageSource.FromFile("login.png");
+            SignupBanner.IsVisible = true;
+
+        }
+
         //var myitems = await App.Service.GetItemsByCategory(ItemCategory.Unassigned);
 
-        //LoadingIndicatorStack.IsVisible = false;
-        //Content.IsVisible = true;
+        LoadingIndicatorStack.IsVisible = false;
+        Content.IsVisible = true;
+    }
+
+    protected override bool OnBackButtonPressed()
+    {
+        return true;
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -109,11 +134,6 @@ public partial class Landing : ContentPage
         }
     }
 
-    private async void DeleteButton_Clicked(object sender, EventArgs e)
-    {
-        //await Navigation.PushModalAsync(new itemde)
-    }
-
     private async void AddNewItem_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushModalAsync(new AddNewItem());
@@ -126,5 +146,52 @@ public partial class Landing : ContentPage
     private async void ViewAllCategories_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushModalAsync(new ViewAllCategories());
+    }
+
+    private async void CartButton_Clicked(object sender, EventArgs e)
+    {
+        if (UsersID > 0)
+        {
+            await Navigation.PushModalAsync(new ViewCart());
+        }
+        else
+        {
+            await DisplayAlert("Cart", "There is nothing in your cart to display, please add items first.", "Ok");
+            return;
+        }
+    }
+
+    private async void LogInOutButton_Clicked(object sender, EventArgs e)
+    {
+        if (UsersID > 0)
+        {
+            //logout
+
+            bool LogoutConfirmation = await DisplayAlert("Logout", "Are you sure you want to logout?", "Yes", "Cancel");
+
+            if (LogoutConfirmation)
+            {
+                Preferences.Clear();
+                await Navigation.PushModalAsync(new LoginSignup());
+            }
+
+            return;
+
+        }
+        else if (UsersID == 0)
+        {
+            //login
+            await Navigation.PushModalAsync(new LoginSignup());
+
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    private async void NotSignedupButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new LoginSignup());
     }
 }

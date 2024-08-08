@@ -4,51 +4,61 @@
              x:Class="MyShopApp.Views.ItemViews.ViewItemsByCategory"
              Title="ViewItemsByCategory"
              BackgroundColor="LightGray">
-    <Grid RowDefinitions="Auto, Auto, *, Auto">
-        <Frame Grid.Row="0" CornerRadius="0">
-            
-       
-            <Grid  ColumnDefinitions="Auto, *, Auto">
-                <ImageButton Grid.Column="0" Source="cart.png" Scale="0.4"/>
-                <Label Grid.Column="1" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
-                <ImageButton Grid.Column="2" Source="settings.png" Scale="0.4"/>
+    <Grid RowDefinitions="*">
+
+
+        <Grid Grid.Row="0" RowDefinitions="Auto, Auto, *, Auto" x:Name="Content">
+            <Frame Grid.Row="0" CornerRadius="0"  HeightRequest="75" BackgroundColor="#2B0B98" BorderColor="#2B0B98">
+
+                <Grid ColumnDefinitions="Auto, *, Auto">
+                    <ImageButton/>
+                    <Label Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" Text="MyShopApp" HorizontalOptions="Center" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                    <ImageButton Grid.Column="2" Source="add.png" x:Name="AddButton" Clicked="AddButton_Clicked"/>
+                </Grid>
+
+            </Frame>
+            <Grid Grid.Row="1" Margin="10">
+                <Label x:Name="CategoryNameLabel" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
             </Grid>
 
-        </Frame>
-        <Grid Grid.Row="1" Margin="10">
-            <Label x:Name="CategoryNameLabel" TextColor="Black" FontSize="18"/>
-        </Grid>
-        
-        <Grid Grid.Row="2" x:Name="Content" Margin="10">
-            <ScrollView>
-                <CollectionView x:Name="ItemsCollectionView">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Frame x:Name="ItemFrame" Margin="10, 15" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
-                                </Frame.GestureRecognizers>
-                                <Grid ColumnDefinitions="Auto, *" >
-                                    <Image Grid.Column="0" Source="{Binding Image}"/>
-                                    <Grid Grid.Column="1" RowDefinitions="*,*">
-                                        <Label Grid.Row="0" Text="{Binding Name}" TextColor="Black"  FontSize="12"/>
-                                        <Label Grid.Row="1" Text="{Binding Price}" TextColor="Black"  FontSize="12"/>
+            <Grid Grid.Row="2">
+                <ScrollView>
+                    <CollectionView x:Name="ItemsCollectionView">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame x:Name="ItemFrame" Margin="5" BackgroundColor="White" CornerRadius="10" BorderColor="LightGray">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="ItemFrame_Tapped"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid ColumnDefinitions="Auto, *" ColumnSpacing="10">
+                                        <Image Grid.Column="0" Source="{Binding Image}"  WidthRequest="50" HeightRequest="50" VerticalOptions="Center"/>
+                                        <Grid Grid.Column="1" RowDefinitions="*,*" RowSpacing="5" VerticalOptions="Center">
+                                            <Label Grid.Row="0" Text="{Binding Name}" TextColor="Black"  FontSize="16" FontAttributes="Bold"/>
+                                            <Label Grid.Row="1" Text="{Binding Price}" TextColor="Black"  FontSize="14"/>
+                                        </Grid>
+
                                     </Grid>
-                                    
-                                </Grid>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ScrollView>
-        </Grid>
-        <Grid Grid.Row="2" x:Name="NothingFound">
-            <Label Text="No results found..." VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
-        </Grid>
-        <Button Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
-        <!--<Grid ColumnDefinitions="*,*" Margin="10 ,5,10,10" ColumnSpacing="10">
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+            </Grid>
+            <Grid Grid.Row="2" x:Name="NothingFound">
+                <StackLayout VerticalOptions="Center" Spacing="10">
+                    <Image Source="sad.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFit"/>
+                    <Label Text="No results found..." VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="18"/>
+                </StackLayout>
+
+            </Grid>
+            <Button FontAttributes="Bold" Grid.Row="3" Margin="10" Grid.Column="0" Text="Back" CornerRadius="10" Clicked="BackButton_Clicked"/>
             
-            <Button Grid.Column="1" Text="Add To Cart" CornerRadius="10"/>
-        </Grid>-->
+        </Grid>
+        <Grid Grid.Row="0" x:Name="LoadingIndicatorStack">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+                <ActivityIndicator Color="#2B0B98" IsRunning="True" WidthRequest="40"/>
+                <Label Text="Loading..." TextColor="#2B0B98" FontSize="14"/>
+            </StackLayout>
+        </Grid>
     </Grid>
 </ContentPage>

@@ -11,7 +11,7 @@ namespace MyShopApp
         {
             InitializeComponent();
 
-            Service = new ServiceManager(new ItemService(), new AuthenticationService());
+            Service = new ServiceManager(new ItemService(), new AuthenticationService(), new CartService());
 
             MainPage = new LoginSignup();
             //MainPage = new AppShell();
